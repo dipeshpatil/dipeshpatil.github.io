@@ -2,6 +2,10 @@
 
 /* header */
 
+.primary-text {
+  color: $buttonColor;
+}
+
 .dark-menu {
   background-color: $darkBackground !important;
   color: $textColorDark;
