@@ -25,6 +25,7 @@ jobs:
           git config --global user.email ${{secrets.EMAIL}}
           git config --global user.name ${{secrets.USERNAME}}
           git remote set-url origin https://${{secrets.PERSONAL_ACCESS_TOKEN}}@github.com/${{secrets.USERNAME}}/dipeshpatil.github.io.git
+          export CI=false
           export REACT_APP_GITHUB_TOKEN=${{secrets.PERSONAL_ACCESS_TOKEN}}
           export GITHUB_USERNAME=${{secrets.USERNAME}}
           export USE_GITHUB_DATA=true
