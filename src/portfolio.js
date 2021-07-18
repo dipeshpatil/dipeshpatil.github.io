@@ -151,7 +151,7 @@ const workExperiences = {
     {
       role: "Software Development Engineer in Test",
       company: "BrowserStack",
-      companylogo: require("./assets/images/bs.png"),
+      companylogo: "https://i.ibb.co/f8Qw6dT/bs.png",
       date: "Apr 2021 – Present",
       desc: "TBA"
       // descBullets: [
@@ -162,7 +162,8 @@ const workExperiences = {
     {
       role: "Graduate Engineer Trainee",
       company: "Jio",
-      companylogo: require("./assets/images/jio.png"),
+      companylogo:
+        "https://i.ibb.co/XS737zY/jio-logo-7720-D2-E7-BA-seeklogo-com.png",
       date: "Nov 2020 – Apr 2021",
       desc: "Department of Automation Testing",
       descBullets: [
@@ -175,7 +176,7 @@ const workExperiences = {
     {
       role: "Junior Developer - Intern",
       company: "Imprimo",
-      companylogo: require("./assets/images/imprimo.png"),
+      companylogo: "https://i.ibb.co/r4pGZm4/imprimo-2dc135c0.png",
       date: "Apr 2019 – Sep 2019",
       desc: "Developed the website for Imprimo, A Subsidiary of Ricoh India.",
       descBullets: [
