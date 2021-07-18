@@ -1,43 +1,43 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7dcb69ae43f790fea03c6f6f0e58a2b2",
+    "revision": "5fde70c9050c8f0bace7903e1e10607e",
     "url": "/index.html"
   },
   {
-    "revision": "1be96040881636d1e460",
-    "url": "/static/css/3.908a7a67.chunk.css"
+    "revision": "efd742246163839a31b9",
+    "url": "/static/css/3.be01e0d6.chunk.css"
   },
   {
-    "revision": "73ccb48e3ad36da5bdc5",
-    "url": "/static/css/4.1e3dd756.chunk.css"
+    "revision": "1d6a8c6a6654d241e68b",
+    "url": "/static/css/4.6b38003b.chunk.css"
   },
   {
-    "revision": "b6888819f0c2701f67e9",
-    "url": "/static/css/main.736873ac.chunk.css"
+    "revision": "a986677f8baaef88ce41",
+    "url": "/static/css/main.f74b5bd7.chunk.css"
   },
   {
-    "revision": "2ae969961c92a3177291",
-    "url": "/static/js/2.584e4f6e.chunk.js"
+    "revision": "3f5bd69655ac4c8ea328",
+    "url": "/static/js/2.605de041.chunk.js"
   },
   {
     "revision": "408f8ade359af8695a328ed937291fdf",
-    "url": "/static/js/2.584e4f6e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.605de041.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "1be96040881636d1e460",
-    "url": "/static/js/3.b5e284ec.chunk.js"
+    "revision": "efd742246163839a31b9",
+    "url": "/static/js/3.d900e578.chunk.js"
   },
   {
-    "revision": "73ccb48e3ad36da5bdc5",
-    "url": "/static/js/4.5413f61d.chunk.js"
+    "revision": "1d6a8c6a6654d241e68b",
+    "url": "/static/js/4.7e691b00.chunk.js"
   },
   {
-    "revision": "b6888819f0c2701f67e9",
-    "url": "/static/js/main.0af8f68c.chunk.js"
+    "revision": "a986677f8baaef88ce41",
+    "url": "/static/js/main.3d843767.chunk.js"
   },
   {
-    "revision": "687bd7ccf0641b1c3718",
-    "url": "/static/js/runtime-main.ed75f962.js"
+    "revision": "80676ddc1b5504f0b3fb",
+    "url": "/static/js/runtime-main.3d05bdb1.js"
   },
   {
     "revision": "a3752c4bf72688b3db38d0911cf75f61",
@@ -66,10 +66,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "52be31441c8cf8a8a16bd7a228d428bf",
     "url": "/static/media/manOnTable.52be3144.svg"
-  },
-  {
-    "revision": "0a0b8a23bdf4f172a69684f0a704a523",
-    "url": "/static/media/mumbaiUniversity.0a0b8a23.png"
   },
   {
     "revision": "829ad0a1deef4d7295adfecdf12df2be",
