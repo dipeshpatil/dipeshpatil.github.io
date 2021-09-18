@@ -28,7 +28,6 @@ export default class Main extends Component {
 
   componentDidMount() {
     localStorage.setItem("isDark", true);
-    this.setState({isDark: true});
   }
 
   render() {
