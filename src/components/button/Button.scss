@@ -19,10 +19,9 @@
   transition: all 0.3s ease-in-out 0s;
 }
 .main-button:hover {
-  background-color: $darkBoxShadow2;
-  color: $buttonColor;
-  transition: all 0.3s ease 0s;
-  transform: translateY(-3px);
+  background-color: $buttonHover;
+  color: $textColorDark;
+  transition: all 0.3s;
 }
 .project-button {
   display: flex;

@@ -3,8 +3,8 @@ Certain colors are used for different and multiply types of elements.
 For greater control over colors visit each components .scss file. */
 
 // button colors
-$buttonColor: #dc2146;
-$buttonHover: #c41a3c;
+$buttonColor: #EA2027;
+$buttonHover: darken($buttonColor, 20%);
 $topButtonHover: #000;
 
 // text colors light theme
