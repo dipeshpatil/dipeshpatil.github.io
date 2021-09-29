@@ -94,7 +94,7 @@ const educationInfo = {
     {
       schoolName: "University Of Mumbai",
       logo: "https://i.ibb.co/f0Bnjnb/logo.jpg",
-      subHeader: "Bachelor Of Engineering, B.E. - Computer Engineering",
+      subHeader: "Bachelor Of Engineering, Computer Engineering",
       duration: "August 2016 - November 2020",
       desc: "Secured A CGPA Of 7.02/10.0",
       descBullets: [

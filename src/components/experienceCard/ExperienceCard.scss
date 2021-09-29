@@ -10,10 +10,9 @@
 
 .experience-card-dark {
   position: relative;
-  background-color: $darkBackground;
+  background-color: lighten($darkBackground, 5%);
   box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   border-radius: 10px;
-  border: 1px solid $lightBorder1;
 }
 
 .experience-card:hover {
