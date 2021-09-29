@@ -78,7 +78,8 @@
 }
 
 .dark-card-mode {
-  background-color: $darkBackground;
+  border-radius: 5px;
+  background-color: lighten($darkBackground, 7%);
   color: $textColorDark;
 }
 .dark-card-mode p {
@@ -86,5 +87,5 @@
 }
 .dark-card-mode:hover {
   background-color: $buttonColor !important;
-  box-shadow: 0px 0px 16px $darkBoxShadow;
+  // box-shadow: 0px 0px 16px $darkBoxShadow;
 }
