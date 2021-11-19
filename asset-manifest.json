@@ -1,20 +1,20 @@
 {
   "files": {
     "main.css": "/static/css/main.88fb42a4.chunk.css",
-    "main.js": "/static/js/main.b6c51ee8.chunk.js",
-    "main.js.map": "/static/js/main.b6c51ee8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.ec9a9421.js",
-    "runtime-main.js.map": "/static/js/runtime-main.ec9a9421.js.map",
+    "main.js": "/static/js/main.9e51cd8f.chunk.js",
+    "main.js.map": "/static/js/main.9e51cd8f.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.3431a092.js",
+    "runtime-main.js.map": "/static/js/runtime-main.3431a092.js.map",
     "static/js/2.d8565560.chunk.js": "/static/js/2.d8565560.chunk.js",
     "static/js/2.d8565560.chunk.js.map": "/static/js/2.d8565560.chunk.js.map",
     "static/css/3.5c35df8e.chunk.css": "/static/css/3.5c35df8e.chunk.css",
-    "static/js/3.db133cd3.chunk.js": "/static/js/3.db133cd3.chunk.js",
-    "static/js/3.db133cd3.chunk.js.map": "/static/js/3.db133cd3.chunk.js.map",
+    "static/js/3.fded8d34.chunk.js": "/static/js/3.fded8d34.chunk.js",
+    "static/js/3.fded8d34.chunk.js.map": "/static/js/3.fded8d34.chunk.js.map",
     "static/css/4.1d46027d.chunk.css": "/static/css/4.1d46027d.chunk.css",
-    "static/js/4.b6939a89.chunk.js": "/static/js/4.b6939a89.chunk.js",
-    "static/js/4.b6939a89.chunk.js.map": "/static/js/4.b6939a89.chunk.js.map",
+    "static/js/4.7ff03775.chunk.js": "/static/js/4.7ff03775.chunk.js",
+    "static/js/4.7ff03775.chunk.js.map": "/static/js/4.7ff03775.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3abfbf293af5e0503c49dc21e92c8404.js": "/precache-manifest.3abfbf293af5e0503c49dc21e92c8404.js",
+    "precache-manifest.96304f24522bf917ad9dad1d94a69fc0.js": "/precache-manifest.96304f24522bf917ad9dad1d94a69fc0.js",
     "service-worker.js": "/service-worker.js",
     "static/css/3.5c35df8e.chunk.css.map": "/static/css/3.5c35df8e.chunk.css.map",
     "static/css/4.1d46027d.chunk.css.map": "/static/css/4.1d46027d.chunk.css.map",
@@ -24,7 +24,6 @@
     "static/media/codeInLogo.webp": "/static/media/codeInLogo.47a7a717.webp",
     "static/media/contactMailDark.svg": "/static/media/contactMailDark.51cf7192.svg",
     "static/media/googleAssistantLogo.webp": "/static/media/googleAssistantLogo.e79c6392.webp",
-    "static/media/itachi_.png": "/static/media/itachi_.57ca800a.png",
     "static/media/nextuLogo.webp": "/static/media/nextuLogo.829ad0a1.webp",
     "static/media/pwaLogo.webp": "/static/media/pwaLogo.ee62cb58.webp",
     "static/media/saayaHealthLogo.webp": "/static/media/saayaHealthLogo.25018d29.webp",
@@ -32,9 +31,9 @@
     "static/media/sss.jpg": "/static/media/sss.1d116720.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ec9a9421.js",
+    "static/js/runtime-main.3431a092.js",
     "static/js/2.d8565560.chunk.js",
     "static/css/main.88fb42a4.chunk.css",
-    "static/js/main.b6c51ee8.chunk.js"
+    "static/js/main.9e51cd8f.chunk.js"
   ]
 }
