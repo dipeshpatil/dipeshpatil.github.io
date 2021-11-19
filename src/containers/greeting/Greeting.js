@@ -54,7 +54,8 @@ export default function Greeting() {
             ) : (
               <img
                 alt="man sitting on table"
-                src={require("../../assets/images/itachi_.png")}
+                // src={require("../../assets/images/itachi_.png")}
+                src="https://i.ibb.co/GRXqC7c/itachi.png"
               ></img>
             )}
           </div>
