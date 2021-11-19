@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fe5d10be1619cd6b930d8548cc7111ed",
+    "revision": "6e53a3c2711eba0a491e656c47407829",
     "url": "/index.html"
   },
   {
@@ -12,7 +12,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/css/4.1d46027d.chunk.css"
   },
   {
-    "revision": "4311ce128479d4dda598",
+    "revision": "6bfa85a523b8e5aaf2de",
     "url": "/static/css/main.88fb42a4.chunk.css"
   },
   {
@@ -32,8 +32,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/4.b6939a89.chunk.js"
   },
   {
-    "revision": "4311ce128479d4dda598",
-    "url": "/static/js/main.3c3759bc.chunk.js"
+    "revision": "6bfa85a523b8e5aaf2de",
+    "url": "/static/js/main.b6c51ee8.chunk.js"
   },
   {
     "revision": "ab0f946f8cfbd9588fa4",
@@ -56,16 +56,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/contactMailDark.51cf7192.svg"
   },
   {
-    "revision": "59389695208d7454c6607bed51ed4316",
-    "url": "/static/media/developerActivity.59389695.svg"
-  },
-  {
     "revision": "e79c639294c805688be731921368c8f8",
     "url": "/static/media/googleAssistantLogo.e79c6392.webp"
   },
   {
-    "revision": "52be31441c8cf8a8a16bd7a228d428bf",
-    "url": "/static/media/manOnTable.52be3144.svg"
+    "revision": "57ca800af8c9552c3ac8b9e941744cba",
+    "url": "/static/media/itachi_.57ca800a.png"
   },
   {
     "revision": "829ad0a1deef4d7295adfecdf12df2be",
@@ -82,5 +78,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3440939881da8339d1597e8d77cdf850",
     "url": "/static/media/skill.34409398.svg"
+  },
+  {
+    "revision": "1d1167208839a56e14d14b584ad3410d",
+    "url": "/static/media/sss.1d116720.jpg"
   }
 ]);
