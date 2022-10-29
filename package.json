@@ -1,6 +1,6 @@
 {
-  "homepage": "https://developerfolio.js.org/",
-  "name": "developerfolio",
+  "homepage": "https://dipeshpatil.github.io",
+  "name": "dipeshpatil.github.io",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -21,10 +21,10 @@
     "sass": "^1.32.8"
   },
   "scripts": {
-    "predeploy": "npm run build",
     "start": "node fetch.js && react-scripts start",
     "build": "node fetch.js && react-scripts build",
-    "deploy": "gh-pages -b master -d build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "format": "prettier --write \"./**/*.{js,css,json,scss}\"",
