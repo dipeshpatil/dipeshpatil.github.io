@@ -14,7 +14,7 @@ const greeting = {
   username: "dxpeshpatxl",
   title: "Hi all, I'm Dipesh Patil",
   subTitle: emoji(
-    "Skilled Fullstack Developer with a demonstrated history of working in Java, React, Javascript, Databases and Testing Frameworks like Selenium, Appium. Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai."
+    "Skilled Fullstack Developer with a demonstrated history of working with MERN Stack with React-Redux, NodeJS, MongoDB and MySQL. Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1wTv7VzJfjmlwx5xGj9WfpfiBKRyUP3PN/view?usp=sharing",
