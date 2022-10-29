@@ -11,7 +11,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "dipeshpatil",
+  username: "dxpeshpatxl",
   title: "Hi all, I'm Dipesh Patil",
   subTitle: emoji(
     "Skilled Fullstack Developer with a demonstrated history of working in Java, React, Javascript, Databases and Testing Frameworks like Selenium, Appium. Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai."
@@ -38,10 +38,10 @@ const skillsSection = {
   subTitle: "CRAZY FULL STACK DEVELOPER WHO WANTS TO EXPLORE EVERY TECH STACK",
   skills: [
     emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
+      "⚡ Skilled in MERN Stack + (SQL and No SQL) Based Databases"
     ),
     emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+      "⚡ Integration of third party services such as AWS"
     ),
     emoji("⚡ Familiar In - JavaScript, Ruby, C++, Java")
   ],
@@ -69,14 +69,6 @@ https://fontawesome.com/icons?d=gallery */
     {
       skillName: "aws",
       fontAwesomeClassname: "fab fa-aws"
-    },
-    {
-      skillName: "firebase",
-      fontAwesomeClassname: "fas fa-fire"
-    },
-    {
-      skillName: "python",
-      fontAwesomeClassname: "fab fa-python"
     },
     {
       skillName: "docker",

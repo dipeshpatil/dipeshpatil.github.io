@@ -16,7 +16,9 @@ $talkCardSubTitle: #7f8287;
 $blogCardTitleColor: #262626;
 
 // text color dark theme
-$textColorDark: #ffffff;
+$textColorDark: #000;
+
+$textColorLight: #fff;
 
 // toggle switch colors
 $toggleCheck: #2196f3;
@@ -36,7 +38,7 @@ $lightBackground2: rgb(255, 255, 255);
 $lightBackground3: #f5f2f4;
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #000;
+$darkBackground: #fff;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);

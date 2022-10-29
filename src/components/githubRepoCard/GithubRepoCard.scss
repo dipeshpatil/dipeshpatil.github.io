@@ -9,9 +9,16 @@
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease;
+
+  &:hover {
+    .repo-card-div, .repo-stats, .repo-name {
+      color: $textColorLight !important;
+    }
+  }
 }
 .repo-card-div:hover {
   box-shadow: $lightBoxShadowDark 0px 20px 30px -10px;
+  color: $textColorLight !important;
 }
 
 .repo-stats {
@@ -80,10 +87,10 @@
 .dark-card-mode {
   border-radius: 5px;
   background-color: lighten($darkBackground, 7%);
-  color: $textColorDark;
+  // color: $textColorDark;
 }
 .dark-card-mode p {
-  color: $textColorDark;
+  // color: $textColorDark;
 }
 .dark-card-mode:hover {
   background-color: $buttonColor !important;

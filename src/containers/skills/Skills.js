@@ -14,19 +14,7 @@ export default function Skills() {
   }
   return (
     <div className={isDark ? "dark-mode main" : "main"} id="skills">
-      <div className="skills-main-div">
-        <Fade left duration={1000}>
-          <div className="skills-image-div">
-            {!illustration.animated ? (
-              <DisplayLottie animationData={codingPerson} />
-            ) : (
-              <img
-                alt="Man Working"
-                src={require("../../assets/images/sss.jpg")}
-              ></img>
-            )}
-          </div>
-        </Fade>
+      <div className="skills-main-div" style={{textAlign: "center"}}>
         <Fade right duration={1000}>
           <div className="skills-text-div">
             <h1

@@ -3,7 +3,7 @@
 .main-button {
   background-color: $buttonColor;
   border: solid 1px $buttonColor;
-  color: $textColorDark;
+  color: $textColorLight !important;
   font-weight: 700;
   width: max-content;
   padding: 13px 22px;
@@ -20,7 +20,7 @@
 }
 .main-button:hover {
   background-color: $buttonHover;
-  color: $textColorDark;
+  color: $textColorLight;
   transition: all 0.3s;
 }
 .project-button {
