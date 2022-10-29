@@ -140,6 +140,10 @@
   }
 }
 
+.experience-text-desc-small {
+  font-size: 13px;
+}
+
 @media (max-width: 768px) {
   .experience-text-role {
     font-size: 22px;
@@ -150,7 +154,8 @@
   .experience-text-date {
     font-size: 18px;
   }
-  .experience-text-desc {
-    font-size: 16px;
+  .experience-text-desc,
+  .experience-text-desc-small {
+    font-size: 12px;
   }
 }

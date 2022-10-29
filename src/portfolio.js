@@ -137,37 +137,36 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Development Engineer in Test",
+      role: "Software Engineer",
       company: "BrowserStack",
       companylogo: "https://i.ibb.co/f8Qw6dT/bs.png",
-      date: "Apr 2021 – Present",
-      desc: "Contributing at Mobile Devices Team to add a new Device to BrowserStack’s Device Farm.",
+      date: "Apr 2021 - Present",
+      // desc: "Contributing at Mobile Devices Team to add a new Device to BrowserStack’s Device Farm.",
       descBullets: [
-        "Migrated current Browserstack’s Automation Framework for Mobile QA Team which was on Ruby to NightwatchJS",
-        "Automated test cases using BrowserStack with Selenium, Appium and used Ruby as the language for scripting.",
-        "Optimised Reporting Dashboard with enhanced UI and new features for better user experience",
-        "Kept track of projects using Jira, Used Practitest to keep track of Test Scenarios, Also did a bit of DevOps and used Docker for containerization."
+        "Migrated existing Ruby framework to JavaScript based NightwatchJS Automation Framework. Used Jenkins as CI/CD pipeline for continuous code shipping and automated several jobs to reduce manual effort, used Docker for Containerization and code shipping.",
+        "Implemented Parallel Execution of tests on Multiple Devices using concurrency, Integrated in existing WDIO Framework and thereby reduced queuing of tests and execution time by 80%. Implemented a safe-lock mechanism which prevented resources from accessing common file at the same time which reduced read-write file errors in concurrent environment.",
+        "Enhanced Test Reporting Dashboard by implementing new features using React and NodeJS to overall improve productivity in analysing test cases and failures in graphical & pictorial way which reduced manual effort by 40%.",
+        "Participated actively in code reviews and took logical and analytical decisions. Worked closely with team to achieve OKRs and onboarded new joinees."
       ]
     },
     {
-      role: "Graduate Engineer Trainee",
+      role: "Graduate Trainee - Associate Software Engineer",
       company: "Jio",
       companylogo:
         "https://i.ibb.co/XS737zY/jio-logo-7720-D2-E7-BA-seeklogo-com.png",
-      date: "Nov 2020 – Apr 2021",
-      desc: "Department of Automation Testing",
+      date: "Nov 2020 - Apr 2021",
+      // desc: "Department of Automation Testing",
       descBullets: [
-        "Performed Automation Testing for JioMeet Android and WebRTC",
-        "Worked on unified-automation-framework repository which consisted of Automation Scripts of Selenium and Appium and used Java as primary language for scripting",
-        "Used Technologies like Selenium, Appium, Cucumber",
-        "Used Microsoft Azure DevOps for Project Management and Tracking"
+        "Worked on various tools and technologies like ReactJS and NodeJS and developed internal tools like Reporting Dashboard and Management Systems.",
+        "Worked on various frameworks which consisted of Automation Scripts of Selenium and Appium and used Java as primary language for scripting.",
+        "Worked with Android Team in building JioTube using technologies like React Native, Redux, Expo, NodeJS, ExpressJS and MongoDB."
       ]
     },
     {
       role: "Junior Developer - Intern",
       company: "Imprimo",
       companylogo: "https://i.ibb.co/r4pGZm4/imprimo-2dc135c0.png",
-      date: "Apr 2019 – Sep 2019",
+      date: "Apr 2019 - Sep 2019",
       desc: "Developed the website for Imprimo, A Subsidiary of Ricoh India.",
       descBullets: [
         "Worked on Landing Page, Products Page, Booking Demos & Services, Admin Panel.",
