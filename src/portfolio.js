@@ -141,11 +141,13 @@ const workExperiences = {
       company: "BrowserStack",
       companylogo: "https://i.ibb.co/f8Qw6dT/bs.png",
       date: "Apr 2021 – Present",
-      desc: "Contributing at Mobile Devices Team to add a new Device to BrowserStack’s Device Farm."
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      desc: "Contributing at Mobile Devices Team to add a new Device to BrowserStack’s Device Farm.",
+      descBullets: [
+        "Migrated current Browserstack’s Automation Framework for Mobile QA Team which was on Ruby to NightwatchJS",
+        "Automated test cases using BrowserStack with Selenium, Appium and used Ruby as the language for scripting.",
+        "Optimised Reporting Dashboard with enhanced UI and new features for better user experience",
+        "Kept track of projects using Jira, Used Practitest to keep track of Test Scenarios, Also did a bit of DevOps and used Docker for containerization."
+      ]
     },
     {
       role: "Graduate Engineer Trainee",
