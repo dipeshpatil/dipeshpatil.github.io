@@ -25,7 +25,7 @@ export default function ExperienceCard({cardInfo, isDark}) {
             className={
               isDark
                 ? "subTitle dark-mode-text experience-text-desc-small"
-                : "subTitle"
+                : "subTitle experience-text-desc-small"
             }
           >
             {item}

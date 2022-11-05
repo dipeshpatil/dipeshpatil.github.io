@@ -2,7 +2,9 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
-$primaryColor: #ea2027;
+@import "_fonts.scss";
+
+$primaryColor: #c70039;
 
 // button colors
 $buttonColor: $primaryColor;
@@ -38,7 +40,7 @@ $lightBackground2: rgb(255, 255, 255);
 $lightBackground3: #f5f2f4;
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #212121;
+$darkBackground: #16213e;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);

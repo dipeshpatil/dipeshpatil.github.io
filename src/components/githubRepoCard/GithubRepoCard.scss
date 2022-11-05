@@ -3,7 +3,7 @@
 .repo-card-div {
   color: $githubRepoCardColor;
   background-color: $lightBackground2;
-  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
+  box-shadow: lighten($primaryColor, 35%) 0px 10px 50px -5px;
   padding: 2rem;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
