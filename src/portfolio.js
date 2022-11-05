@@ -230,6 +230,18 @@ const achievementSection = {
 
   achievementsCards: [
     {
+      title: "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
+      subtitle: "Issued Nov 2022 · No Expiration Date",
+      // image: require("./assets/images/codeInLogo.webp"),
+      // imageAlt: "Google Code-In Logo",
+      footerLink: [
+        {
+          name: "Certification",
+          url: "https://www.udemy.com/certificate/UC-a4e415ea-492e-4a7d-99d2-90f60c403f0e/"
+        }
+      ]
+    },
+    {
       title: "Getting Started with Go",
       subtitle: "Issued Jun 2020 · No Expiration Date",
       // image: require("./assets/images/codeInLogo.webp"),
