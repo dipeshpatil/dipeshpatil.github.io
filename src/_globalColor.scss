@@ -40,7 +40,7 @@ $lightBackground2: rgb(255, 255, 255);
 $lightBackground3: #f5f2f4;
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #16213e;
+$darkBackground: #000;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);
@@ -78,7 +78,7 @@ $iconBackground: #333;
 $appHeaderBG: #282c34;
 
 // misc colors
-$skillsColor: lighten($primaryColor, 10%);
+$skillsColor: $primaryColor;
 $appLink: #09d3ac;
 
 // social media icons

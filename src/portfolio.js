@@ -125,7 +125,7 @@ const techStack = {
     },
     {
       Stack: "Programming",
-      progressPercentage: "60%"
+      progressPercentage: "80%"
     }
   ],
   displayCodersrank: false // Set true to display codersrank badges section need to changes your username in src/containers/skillProgress/skillProgress.js:17:62, defaults to false
@@ -232,7 +232,8 @@ const achievementSection = {
     {
       title: "MERN Stack Front To Back: Full Stack React, Redux & Node.js",
       subtitle: "Issued Nov 2022 · No Expiration Date",
-      image: "https://udemy-certificate.s3.amazonaws.com/image/UC-a4e415ea-492e-4a7d-99d2-90f60c403f0e.jpg?v=1667644589000",
+      image:
+        "https://udemy-certificate.s3.amazonaws.com/image/UC-a4e415ea-492e-4a7d-99d2-90f60c403f0e.jpg?v=1667644589000",
       imageAlt: "MERN Stack Front To Back Certificate",
       showImage: true,
       footerLink: [
@@ -245,7 +246,8 @@ const achievementSection = {
     {
       title: "Getting Started with Go",
       subtitle: "Issued Jun 2020 · No Expiration Date",
-      image: "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XLNXJXXSLCS6/CERTIFICATE_LANDING_PAGE~XLNXJXXSLCS6.jpeg",
+      image:
+        "https://s3.amazonaws.com/coursera_assets/meta_images/generated/CERTIFICATE_LANDING_PAGE/CERTIFICATE_LANDING_PAGE~XLNXJXXSLCS6/CERTIFICATE_LANDING_PAGE~XLNXJXXSLCS6.jpeg",
       imageAlt: "Getting Started with Go Certificate",
       showImage: true,
       footerLink: [
