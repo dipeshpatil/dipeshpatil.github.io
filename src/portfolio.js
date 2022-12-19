@@ -305,6 +305,11 @@ const blogSection = {
       url: "https://blog.logrocket.com/creating-offline-first-react-native-app/",
       title: "Creating an offline-first React Native app",
       description: "Five ways to implement an offline-first app in React Native"
+    },
+    {
+      url: "https://betterprogramming.pub/10-javascript-promise-challenges-before-you-start-an-interview-c9af8d4144ec",
+      title: "10 JavaScript Promise Challenges Before You Start an Interview",
+      description: "10 code challenges about Promise, from basic to advanced."
     }
   ],
   display: true // Set false to hide this section, defaults to true
