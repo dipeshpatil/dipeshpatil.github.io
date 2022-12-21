@@ -137,13 +137,20 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
+      role: "Software Engineer II - Backend",
+      company: "FlexiLoans",
+      companylogo: "https://iili.io/HzGvYmB.png",
+      date: "Dec 2022 - Present",
+      desc: "TBA",
+      descBullets: []
+    },
+    {
       role: "Software Engineer",
       company: "BrowserStack",
       companylogo: "https://i.ibb.co/f8Qw6dT/bs.png",
-      date: "Apr 2021 - Present",
-      // desc: "Contributing at Mobile Devices Team to add a new Device to BrowserStack’s Device Farm.",
+      date: "Apr 2021 - Dec 2022",
+      desc: "Worked in Mobile Devices & Device Features Team.",
       descBullets: [
-        "Migrated existing Ruby framework to JavaScript based NightwatchJS Automation Framework. Used Jenkins as CI/CD pipeline for continuous code shipping and automated several jobs to reduce manual effort, used Docker for Containerization and code shipping.",
         "Implemented Parallel Execution of tests on Multiple Devices using concurrency, Integrated in existing WDIO Framework and thereby reduced queuing of tests and execution time by 80%. Implemented a safe-lock mechanism which prevented resources from accessing common file at the same time which reduced read-write file errors in concurrent environment.",
         "Enhanced Test Reporting Dashboard by implementing new features using React and NodeJS to overall improve productivity in analysing test cases and failures in graphical & pictorial way which reduced manual effort by 40%.",
         "Participated actively in code reviews and took logical and analytical decisions. Worked closely with team to achieve OKRs and onboarded new joinees."
