@@ -136,14 +136,14 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
-    {
-      role: "Software Engineer II - Backend",
-      company: "FlexiLoans",
-      companylogo: "https://iili.io/HzGvYmB.png",
-      date: "Dec 2022 - Present",
-      desc: "TBA",
-      descBullets: []
-    },
+    // {
+    //   role: "Software Engineer II - Backend",
+    //   company: "FlexiLoans",
+    //   companylogo: "https://iili.io/HzGvYmB.png",
+    //   date: "Dec 2022 - Present",
+    //   desc: "TBA",
+    //   descBullets: []
+    // },
     {
       role: "Software Engineer",
       company: "BrowserStack",
