@@ -3,7 +3,7 @@
 .repo-card-div {
   color: $githubRepoCardColor;
   background-color: $lightBackground2;
-  box-shadow: lighten($primaryColor, 35%) 0px 10px 50px -5px;
+  box-shadow: $accentBoxShadow 0px 10px 50px -5px;
   padding: 2rem;
   border-radius: 5px;
   cursor: pointer;
@@ -92,5 +92,5 @@
 
 .dark-card-mode:hover {
   background-color: $buttonColor !important;
-  box-shadow: 0px 0px 16px $darkBoxShadow;
+  box-shadow: 0px 0px 16px $accentBoxShadow;
 }

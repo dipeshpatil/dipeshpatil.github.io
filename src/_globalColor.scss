@@ -51,6 +51,9 @@ $lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
 $darkBoxShadow: #d9dbdf;
 $darkBoxShadow2: #ffffff;
 
+// accent boxshadow
+$accentBoxShadow: lighten($primaryColor, 35%);
+
 // linear gradients
 $experienceCardBlurredDivLG: linear-gradient(
   rgba(0, 0, 0, 0.4),
