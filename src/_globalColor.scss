@@ -4,7 +4,7 @@ For greater control over colors visit each components .scss file. */
 
 @import "_fonts.scss";
 
-$primaryColor: #590995;
+$primaryColor: #C70039;
 
 // button colors
 $buttonColor: $primaryColor;
@@ -52,7 +52,7 @@ $darkBoxShadow: #d9dbdf;
 $darkBoxShadow2: #ffffff;
 
 // accent boxshadow
-$accentBoxShadow: lighten($primaryColor, 35%);
+$accentBoxShadow: lighten($primaryColor, 25%);
 
 // linear gradients
 $experienceCardBlurredDivLG: linear-gradient(
