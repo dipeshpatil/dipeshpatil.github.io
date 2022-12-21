@@ -22,9 +22,14 @@ const illustration = {
 const greeting = {
   username: "dxpeshpatxl",
   title: "Hi all, I'm Dipesh Patil",
-  subTitle: emoji(
-    "Skilled Fullstack Developer with a demonstrated history of working with MERN Stack with React-Redux, NodeJS, MongoDB and MySQL. Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai."
-  ),
+  subTitle: [
+    emoji(
+      "Skilled Software Engineer with a demonstrated history of working with MERN Stack with React-Redux, NodeJS, MongoDB and MySQL."
+    ),
+    emoji(
+      "Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai."
+    )
+  ],
   resumeLink:
     "https://drive.google.com/file/d/1S1tTvU910bdocbg9D7EquDe_KMnLzoV5/view?usp=share_link",
   displayGreeting: true // Set false to hide this section, defaults to true
