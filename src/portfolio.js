@@ -24,7 +24,7 @@ const greeting = {
   title: "Hi all, I'm Dipesh Patil",
   subTitle: [
     emoji(
-      "Skilled Software Engineer with a demonstrated history of working with MERN Stack with React-Redux, NodeJS, MongoDB and MySQL."
+      "Skilled Software Engineer with 3 Years of demonstrated history of working with MERN Stack with React-Redux, NodeJS, MongoDB and MySQL."
     ),
     emoji(
       "Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai."
@@ -122,11 +122,11 @@ const techStack = {
   experience: [
     {
       Stack: "Frontend/Design", //Insert stack or technology you have experience in
-      progressPercentage: "90%" //Insert relative proficiency in percentage
+      progressPercentage: "60%" //Insert relative proficiency in percentage
     },
     {
       Stack: "Backend",
-      progressPercentage: "70%"
+      progressPercentage: "80%"
     },
     {
       Stack: "Programming",
@@ -154,11 +154,11 @@ const workExperiences = {
       company: "BrowserStack",
       companylogo: "https://i.ibb.co/f8Qw6dT/bs.png",
       date: "Apr 2021 - Dec 2022",
-      desc: "Worked in Mobile Devices & Device Features Team.",
+      desc: "Worked in Device Features Team.",
       descBullets: [
-        "Implemented Parallel Execution of tests on Multiple Devices using concurrency, Integrated in existing WDIO Framework and thereby reduced queuing of tests and execution time by 80%. Implemented a safe-lock mechanism which prevented resources from accessing common file at the same time which reduced read-write file errors in concurrent environment.",
-        "Enhanced Test Reporting Dashboard by implementing new features using React and NodeJS to overall improve productivity in analysing test cases and failures in graphical & pictorial way which reduced manual effort by 40%.",
-        "Participated actively in code reviews and took logical and analytical decisions. Worked closely with team to achieve OKRs and onboarded new joinees."
+        "Worked as a FullStack Developer in Device Features Engineering team along with Product and Design managers to release new product features requested by customers on the basis of support ticket frequency.",
+        "Migrated component library from jQuery to ReactJS which is currently used as the main UI Library for developing web applications in the product.",
+        "Implemented Parallel Execution of tests on Multiple Devices using concurrency, Integrated in existing WDIO Framework and thereby reduced queuing of tests and execution time by 80%. Implemented a safe-lock mechanism which prevented read-write file errors in concurrent environment."
       ]
     },
     {
@@ -170,22 +170,18 @@ const workExperiences = {
       // desc: "Department of Automation Testing",
       descBullets: [
         "Worked on various tools and technologies like ReactJS and NodeJS and developed internal tools like Reporting Dashboard and Management Systems.",
-        "Worked on various frameworks which consisted of Automation Scripts of Selenium and Appium and used Java as primary language for scripting.",
-        "Worked with Android Team in building JioTube using technologies like React Native, Redux, Expo, NodeJS, ExpressJS and MongoDB."
+        "Worked with Android Team in building MyJio App using technologies like React Native, Redux, Expo, NodeJS, ExpressJS and MongoDB"
       ]
     },
     {
-      role: "Junior Developer - Intern",
+      role: "Software Developer",
       company: "Imprimo",
       companylogo: "https://i.ibb.co/r4pGZm4/imprimo-2dc135c0.png",
-      date: "Apr 2019 - Sep 2019",
+      date: "Apr 2019 - Mar 2020",
       desc: "Developed the website for Imprimo, A Subsidiary of Ricoh India.",
       descBullets: [
-        "Worked on Landing Page, Products Page, Booking Demos & Services, Admin Panel.",
-        "Used LAMP Stack since it was a normal CMS website.",
-        "Also used AJAX for dynamic content rendering.",
-        "Included Meta information for SEO to recognize.",
-        "Also designed the logo for the company and handled creatives under Dept of Marketing."
+        "Developed the E-Commerce website for Imprimo Business Solution’s products and took complete ownership and maintenance including Search Engine Optimisation.",
+        "Used Java SpringBoot and MySQL on the backend and ReactJS on the frontend."
       ]
     }
   ]
