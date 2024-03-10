@@ -141,6 +141,15 @@ const techStack = {
 const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
+    {
+      // https://avatars.githubusercontent.com/u/1441317?s=200&v=4
+      role: "Software Engineer",
+      company: "Morningstar, Inc.",
+      companylogo: "https://avatars.githubusercontent.com/u/1441317?s=200&v=4",
+      date: "May 2023 - Present",
+      desc: "Working as a Software Engineer in Commodities and Energy - Product Dev Team.",
+      descBullets: []
+    },
     // {
     //   role: "Software Engineer II - Backend",
     //   company: "FlexiLoans",
