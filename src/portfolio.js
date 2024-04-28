@@ -148,7 +148,14 @@ const workExperiences = {
       companylogo: "https://avatars.githubusercontent.com/u/1441317?s=200&v=4",
       date: "May 2023 - Present",
       desc: "Working as a Software Engineer in Commodities and Energy - Product Dev Team.",
-      descBullets: []
+      descBullets: [
+        "Designed and developed intuitive frontend interfaces with Vue.js for seamless user experiences.",
+        "Implemented scalable, secure, and high-performance backend solutions using Java Spring Boot.",
+        "Collaborated with cross-functional teams to translate client requirements into actionable tasks, delivering solutions that exceed expectations.",
+        "Modified and optimized workflow formulas using JavaScript to enhance efficiency for clients.",
+        "Conducted thorough testing and debugging to ensure reliable, error-free software delivery.",
+        "Provided ongoing support, maintenance, and updates for Workflow Manager, incorporating user feedback for continuous improvement."
+      ]
     },
     // {
     //   role: "Software Engineer II - Backend",
@@ -181,18 +188,18 @@ const workExperiences = {
         "Worked on various tools and technologies like ReactJS and NodeJS and developed internal tools like Reporting Dashboard and Management Systems.",
         "Worked with Android Team in building MyJio App using technologies like React Native, Redux, Expo, NodeJS, ExpressJS and MongoDB"
       ]
-    },
-    {
-      role: "Software Developer",
-      company: "Imprimo",
-      companylogo: "https://i.ibb.co/r4pGZm4/imprimo-2dc135c0.png",
-      date: "Apr 2019 - Mar 2020",
-      desc: "Developed the website for Imprimo, A Subsidiary of Ricoh India.",
-      descBullets: [
-        "Developed the E-Commerce website for Imprimo Business Solution’s products and took complete ownership and maintenance including Search Engine Optimisation.",
-        "Used Java SpringBoot and MySQL on the backend and ReactJS on the frontend."
-      ]
     }
+    // {
+    //   role: "Software Developer",
+    //   company: "Imprimo",
+    //   companylogo: "https://i.ibb.co/r4pGZm4/imprimo-2dc135c0.png",
+    //   date: "Apr 2019 - Mar 2020",
+    //   desc: "Developed the website for Imprimo, A Subsidiary of Ricoh India.",
+    //   descBullets: [
+    //     "Developed the E-Commerce website for Imprimo Business Solution’s products and took complete ownership and maintenance including Search Engine Optimisation.",
+    //     "Used Java SpringBoot and MySQL on the backend and ReactJS on the frontend."
+    //   ]
+    // }
   ]
 };
 
