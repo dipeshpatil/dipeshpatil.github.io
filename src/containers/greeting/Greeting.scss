@@ -33,9 +33,12 @@
   display: flex;
   margin-top: 20px;
 }
+.download-link-button {
+  text-decoration: none;
+}
 
 .greeting-text {
-  font-size: 50px;
+  font-size: 70px;
   line-height: 1.1;
   color: $textColor !important;
 }

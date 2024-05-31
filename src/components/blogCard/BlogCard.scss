@@ -8,7 +8,7 @@
   border-radius: 10px;
   color: $blogCardContainerColor;
   background-color: $lightBackground1;
-  box-shadow: 0 0 36px $accentBoxShadow;
+  box-shadow: 0 0 36px $lightBoxShadow;
   cursor: pointer;
   height: 200px;
 }
@@ -145,5 +145,5 @@
   }
 }
 .blog-card-shadow {
-  box-shadow: 1px 0px 20px $accentBoxShadow;
+  box-shadow: 1px 0px 20px $darkBoxShadow2;
 }

@@ -3,9 +3,8 @@
 .repo-card-div {
   color: $githubRepoCardColor;
   background-color: $lightBackground2;
-  box-shadow: $accentBoxShadow 0px 10px 50px -5px;
+  box-shadow: $lightBoxShadowDark 0px 10px 30px -15px;
   padding: 2rem;
-  border-radius: 5px;
   cursor: pointer;
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
@@ -88,4 +87,9 @@
 
 .dark-card-mode .repo-svg {
   fill: $textColorDark;
+}
+
+.dark-card-mode:hover {
+  background-color: $buttonColor !important;
+  box-shadow: 0px 0px 16px $darkBoxShadow;
 }

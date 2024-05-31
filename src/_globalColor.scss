@@ -2,13 +2,9 @@
 Certain colors are used for different and multiply types of elements. 
 For greater control over colors visit each components .scss file. */
 
-@import "_fonts.scss";
-
-$primaryColor: #27AE60;
-
 // button colors
-$buttonColor: $primaryColor;
-$buttonHover: darken($primaryColor, 20%);
+$buttonColor: #55198b;
+$buttonHover: #8c43ce;
 $topButtonHover: #000;
 
 // text colors light theme
@@ -23,16 +19,16 @@ $blogCardTitleColor: #262626;
 $textColorDark: #ffffff;
 
 // toggle switch colors
-$toggleCheck: lighten($primaryColor, 20%);
+$toggleCheck: #2196f3;
 $toggleSwitchSliderBG: #ccc;
 
 // githubRepo specific colors
-$githubRepoCardLanguageColorBG: $primaryColor;
+$githubRepoCardLanguageColorBG: #0000ff;
 $githubRepoCardColor: rgb(88, 96, 105);
 $githubRepoCardRepoCardStatsColor: rgb(106, 115, 125);
 $githubRepoCardRepoNameColor: rgb(36, 41, 46);
 $githubProfileCardLocationTS: #ffebcd;
-$githubProfileCardBorder: $primaryColor;
+$githubProfileCardBorder: #6c63ff;
 
 // light background colors
 $lightBackground1: #fff;
@@ -40,7 +36,7 @@ $lightBackground2: rgb(255, 255, 255);
 $lightBackground3: #f5f2f4;
 $blogCardContainerColor: #586069;
 // dark background colors
-$darkBackground: #101010;
+$darkBackground: #171c28;
 
 // light theme box shadows
 $lightBoxShadowDark: rgba(0, 0, 0, 0.2);
@@ -50,9 +46,6 @@ $lightBoxShadowDarker: rgba(0, 0, 0, 0.3);
 // dark theme box shadows
 $darkBoxShadow: #d9dbdf;
 $darkBoxShadow2: #ffffff;
-
-// accent boxshadow
-$accentBoxShadow: lighten($primaryColor, 25%);
 
 // linear gradients
 $experienceCardBlurredDivLG: linear-gradient(
@@ -67,7 +60,7 @@ $experienceCardBannerLG: linear-gradient(
 // borders
 $progressBarBackground: rgb(243, 239, 239);
 $lightBorder1: rgba(211, 211, 211, 0.397);
-$educationCardBorder: lighten($primaryColor, 20%);
+$educationCardBorder: #a9a7f9;
 
 // hovers
 $achievementCertificateCardHoverDark: rgba(255, 255, 255, 0.2);
@@ -76,12 +69,12 @@ $headerHoverBG: #f4f4f4;
 $contactDetailHoverTS: #b5b5b5;
 
 // misc backgrounds
-$progressBarSpanBG: lighten($primaryColor, 10%);
+$progressBarSpanBG: #aaa5ff;
 $iconBackground: #333;
 $appHeaderBG: #282c34;
 
 // misc colors
-$skillsColor: $primaryColor;
+$skillsColor: #645beb;
 $appLink: #09d3ac;
 
 // social media icons
