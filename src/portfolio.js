@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "dxpeshpatxl",
+  username: "dp28",
   title: "Hi all, I'm Dipesh Patil",
   subTitle: [
     emoji(
