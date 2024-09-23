@@ -31,7 +31,7 @@ const greeting = {
     )
   ],
   resumeLink:
-    "https://drive.google.com/file/d/1S1tTvU910bdocbg9D7EquDe_KMnLzoV5/view?usp=share_link",
+    "https://drive.google.com/file/d/1S1tTvU910bdocbg9D7EquDe_KMnLzoV5/view?usp=sharing",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
