@@ -20,7 +20,7 @@ const illustration = {
 };
 
 const greeting = {
-  username: "dxpeshpatxl",
+  username: "dp28",
   title: "Hi all, I'm Dipesh Patil",
   subTitle: [
     emoji(
@@ -31,7 +31,7 @@ const greeting = {
     )
   ],
   resumeLink:
-    "https://drive.google.com/file/d/1S1tTvU910bdocbg9D7EquDe_KMnLzoV5/view?usp=share_link",
+    "https://drive.google.com/file/d/1lLt9AFN1khq8mDt2RVQDOZP18raoGiZQ/view?usp=drive_link",
   displayGreeting: true // Set false to hide this section, defaults to true
 };
 
@@ -146,8 +146,8 @@ const workExperiences = {
       role: "Software Engineer",
       company: "Morningstar, Inc.",
       companylogo: "https://avatars.githubusercontent.com/u/1441317?s=200&v=4",
-      date: "May 2023 - Present",
-      desc: "Working as a Software Engineer in Commodities and Energy - Product Dev Team.",
+      date: "May 2023 - Sep 2024",
+      desc: "Worked as a Software Engineer in Commodities and Energy - Product Dev Team.",
       descBullets: [
         "Designed and developed intuitive frontend interfaces with Vue.js for seamless user experiences.",
         "Implemented scalable, secure, and high-performance backend solutions using Java Spring Boot.",
