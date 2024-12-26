@@ -1,36 +1,28 @@
-@font-face {
-  font-family: "Agustina Regular";
-  font-style: normal;
-  font-weight: normal;
-  src: local("Agustina Regular"),
-    url("./assets/fonts/Agustina.woff") format("woff");
-  font-display: swap;
-}
-@font-face {
-  font-family: "Montserrat";
-  src: local("Montserrat"),
-    url("./assets/fonts/Montserrat-Regular.ttf") format("woff");
-  font-display: swap;
-}
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
+@import "./styles/hero.css";
+@import "./styles/skills.css";
+@import "./styles/experience.css";
+@import "./styles/education.css";
+@import "./styles/projects.css";
+@import "./styles/fonts.css";
+@import "./styles/navbar.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 html,
 body {
-  scroll-behavior: smooth;
+  background-color: #f5ebd7;
 }
-body {
-  margin: 0;
-  font: 19px / 23px Montserrat, "Montserrat", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+
+.bg-primary {
+  @apply bg-[#f5ebd7] text-black dark:bg-slate-800 dark:text-gray-100;
 }
-/* Media Query */
-@media (max-width: 1380px) {
-  html,
-  body {
-    font-size: rem;
-    line-height: normal;
-  }
+
+.bg-secondary {
+  @apply bg-[#dfd1b6] text-gray-800 dark:bg-slate-900 dark:text-gray-100;
+}
+
+.section-font {
+  @apply lobster-regular;
 }
