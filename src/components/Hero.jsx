@@ -10,7 +10,7 @@ const Hero = () => {
         <br />
         <br />
         <span className="text-5xl roboto-slab-thin">I&apos;m&nbsp;</span>
-        <span className="text-5xl roboto-slab-hero">DP28</span>
+        <span className="text-5xl skill-dp28 roboto-slab-hero">DP28</span>
         <br />
         <br />
       </h1>
