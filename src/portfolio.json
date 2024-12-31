@@ -153,7 +153,7 @@
       "accent": "skill-javascript"
     },
     {
-      "skill": "React",
+      "skill": "React.js",
       "accent": "skill-react"
     },
     {
@@ -175,6 +175,34 @@
     {
       "skill": "AWS",
       "accent": "skill-aws"
+    },
+    {
+      "skill": "Redis",
+      "accent": "skill-redis"
+    },
+    {
+      "skill": "REST API",
+      "accent": "skill-rest"
+    },
+    {
+      "skill": "Postman",
+      "accent": "skill-postman"
+    },
+    {
+      "skill": "Docker",
+      "accent": "skill-docker"
+    },
+    {
+      "skill": "Kubernetes",
+      "accent": "skill-kubernetes"
+    },
+    {
+      "skill": "Git",
+      "accent": "skill-git"
+    },
+    {
+      "skill": "Jenkins",
+      "accent": "skill-jenkins"
     }
   ]
 }

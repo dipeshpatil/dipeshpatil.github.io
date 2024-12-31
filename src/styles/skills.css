@@ -19,7 +19,7 @@
 }
 
 .skill-sql {
-  @apply bg-orange-500 text-white px-2 py-1;
+  @apply bg-blue-500 text-white px-2 py-1;
 }
 
 .skill-aws {
@@ -36,4 +36,32 @@
 
 .skill-php {
   @apply bg-[#7277ad] text-white px-2 py-1;
+}
+
+.skill-redis {
+  @apply bg-red-500 text-white px-2 py-1;
+}
+
+.skill-rest {
+  @apply bg-blue-500 text-white px-2 py-1;
+}
+
+.skill-postman {
+  @apply bg-orange-500 text-white px-2 py-1;
+}
+
+.skill-docker {
+  @apply bg-blue-500 text-white px-2 py-1;
+}
+
+.skill-kubernetes {
+  @apply bg-blue-700 text-white px-2 py-1;
+}
+
+.skill-git {
+  @apply bg-gray-500 text-white px-2 py-1;
+}
+
+.skill-jenkins {
+  @apply bg-red-600 text-white px-2 py-1;
 }
