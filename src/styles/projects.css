@@ -8,6 +8,6 @@
 
 .project-link {
   @apply px-2 py-1 mr-1 text-sm bg-white text-black hover:bg-gray-200 border-black
-  dark:bg-slate-800 dark:text-gray-100 dark:hover:bg-slate-700 dark:border-gray-100
+  dark:bg-[#2f2f2f] dark:text-gray-100 dark:hover:bg-slate-700 dark:border-gray-100
   font-bold border-2 transition duration-200 inline-block uppercase;
 }
