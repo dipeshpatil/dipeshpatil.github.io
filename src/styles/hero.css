@@ -1,6 +1,6 @@
 .button-contact {
   @apply px-8 py-4 bg-white text-black hover:bg-gray-200 border-black
-  dark:bg-slate-800 dark:text-gray-100 dark:hover:bg-slate-700 dark:border-gray-100
+  dark:bg-[#2f2f2f] dark:text-gray-100 dark:hover:bg-slate-700 dark:border-gray-100
   font-bold text-2xl border-4 transition duration-200 inline-block uppercase;
 }
 
@@ -17,5 +17,5 @@
 }
 
 .hero-js {
-  @apply text-black font-bold bg-yellow-300 py-2 pl-3 pr-1 border-black border-2;
+  @apply text-black font-bold bg-yellow-300 pb-1 pt-4 pl-4 pr-1 border-black dark:border-white border-2;
 }

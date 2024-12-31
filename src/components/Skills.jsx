@@ -1,33 +1,4 @@
-const skills = [
-  {
-    skill: "JavaScript",
-    accent: "skill-javascript",
-  },
-  {
-    skill: "React",
-    accent: "skill-react",
-  },
-  {
-    skill: "Vue.js",
-    accent: "skill-vue",
-  },
-  {
-    skill: "Node.js",
-    accent: "skill-node",
-  },
-  {
-    skill: "MongoDB",
-    accent: "skill-mongo",
-  },
-  {
-    skill: "MySQL",
-    accent: "skill-sql",
-  },
-  {
-    skill: "AWS",
-    accent: "skill-aws",
-  },
-];
+import {skills} from "../portfolio.json";
 
 const Skills = () => {
   return (

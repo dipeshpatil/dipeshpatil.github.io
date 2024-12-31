@@ -1,0 +1,180 @@
+{
+  "about": "Skilled Backend Engineer with 4 Years of demonstrated history of working with Node.js, Kafka, Redis, MySQL, MongoDB and AWS. Strong Engineering Professional with a Bachelor's Degree focused in Computer Engineering from University of Mumbai.",
+  "experience": [
+    {
+      "company": "Imprimo Business Solutions",
+      "role": "Software Engineer Intern",
+      "duration": "Apr 2019 - Sep 2019",
+      "description": "Worked as a Junior Developer to build the Imprimo Product Website from scratch for their products",
+      "bullets": [
+        "Developed and maintained the website for Imprimo Business Solutions, ensuring functionality and user-friendliness.",
+        "Designed and implemented new features, ensured website security, and provided ongoing maintenance and support.",
+        "Collaborated with the management team to translate their vision into a visually appealing and user-friendly platform"
+      ],
+      "accentColor": "exp-imprimo"
+    },
+    {
+      "company": "Reliance Jio",
+      "role": "Graduate Trainee",
+      "duration": "Nov 2020 - Apr 2021",
+      "description": "Developed internal tools enhancing team collaboration.",
+      "bullets": [
+        "Worked on various tools and technologies like ReactJS and NodeJS and developed internal tools like Reporting Dashboard and Management Systems.",
+        "Worked with Android Team in building MyJio App using technologies like React Native, Redux, Expo, NodeJS, ExpressJS and MongoDB"
+      ],
+      "accentColor": "exp-jio"
+    },
+    {
+      "company": "BrowserStack",
+      "role": "Software Development Engineer",
+      "duration": "Apr 2021 - Dec 2022",
+      "description": "Worked in Device Features Team, built scalable applications, reducing customer-reported issues by 20%.",
+      "bullets": [
+        "Worked as a FullStack Developer in Device Features Engineering team along with Product and Design managers to release new product features requested by customers on the basis of support ticket frequency.",
+        "Migrated component library from jQuery to ReactJS which is currently used as the main UI Library for developing web applications in the product.",
+        "Implemented Parallel Execution of tests on Multiple Devices using concurrency, Integrated in existing WDIO Framework and thereby reduced queuing of tests and execution time by 80%.",
+        "Implemented a safe-lock mechanism which prevented read-write file errors in concurrent environment."
+      ],
+      "accentColor": "exp-browserstack"
+    },
+    {
+      "company": "Morningstar",
+      "role": "Software Engineer",
+      "duration": "May 2023 - Sep 2024",
+      "description": "Worked as a Software Engineer in Commodities and Energy - Product Dev Team.",
+      "bullets": [
+        "Designed and developed intuitive frontend interfaces with Vue.js for seamless user experiences.",
+        "Implemented scalable, secure, and high-performance backend solutions using Java Spring Boot.",
+        "Collaborated with cross-functional teams to translate client requirements into actionable tasks, delivering solutions that exceed expectations.",
+        "Modified and optimized workflow formulas using JavaScript to enhance efficiency for clients.",
+        "Conducted thorough testing and debugging to ensure reliable, error-free software delivery.",
+        "Provided ongoing support, maintenance, and updates for Workflow Manager, incorporating user feedback for continuous improvement."
+      ],
+      "accentColor": "exp-morningstar"
+    }
+  ],
+  "projects": [
+    {
+      "name": "VideoMania",
+      "skills": [
+        {
+          "skill": "Vue.js",
+          "accent": "skill-vue"
+        },
+        {
+          "skill": "Node.js",
+          "accent": "skill-node"
+        },
+        {
+          "skill": "MongoDB",
+          "accent": "skill-mongo"
+        },
+        {
+          "skill": "Express.js",
+          "accent": "skill-express"
+        },
+        {
+          "skill": "AWS S3",
+          "accent": "skill-aws"
+        }
+      ],
+      "description": "Developed a full-stack video service application with RESTful APIs using Node.js, Express, and MongoDB, enabling video upload, trimming, merging, and sharing functionalities. Implemented Multer middleware for robust file handling, integrated permissions and credit-based access control system, and designed secure user authentication. Built the frontend using Vue.js, employing reusable components and state management for seamless user experience. Focused on error handling, scalability, and performance optimization to deliver a reliable solution",
+      "links": [
+        {
+          "text": "Backend",
+          "link": "https://github.com/dipeshpatil/videomania-backend"
+        },
+        {
+          "text": "Frontend",
+          "link": "https://github.com/dipeshpatil/videomania-client"
+        }
+      ]
+    },
+    {
+      "name": "Algorithms Visualiser",
+      "skills": [
+        {
+          "skill": "React",
+          "accent": "skill-react"
+        }
+      ],
+      "description": "Algorithms Visualiser is an opensource project made using ReactJS. Visualise Algorithms on Sorting, Pathfinding, Searching, Word Search, Backtracking.",
+      "links": [
+        {
+          "text": "Source Code",
+          "link": "https://github.com/dipeshpatil/algorithms-visualiser"
+        },
+        {
+          "text": "Live Demo",
+          "link": "https://dipeshpatil.github.io/algorithms-visualiser/#/"
+        }
+      ]
+    },
+    {
+      "name": "SyncPhonic - An Online Music Streaming Website",
+      "skills": [
+        {
+          "skill": "PHP",
+          "accent": "skill-php"
+        },
+        {
+          "skill": "MySQL",
+          "accent": "skill-sql"
+        }
+      ],
+      "description": "A music streaming web application. Users have the option to create personalized playlists. SyncPhonic provides lyrics and visual effects as well. SyncPhonic is built on PHP & MySQL",
+      "links": [
+        {
+          "text": "Source Code",
+          "link": "https://github.com/dipeshpatil/SyncPhonic"
+        }
+      ]
+    }
+  ],
+  "education": [
+    {
+      "college": "Xavier Institute of Engineering",
+      "university": "University of Mumbai",
+      "degree": "Bachelor of Engineering in Computer Science",
+      "cgpa": "A",
+      "description": "Focused on core computer science subjects such as Data Structures, Algorithms, and Databases. Participated in various coding competitions and developed a strong foundation in software development."
+    },
+    {
+      "college": "Nirmala Memorial Foundation college of Science and Commerce",
+      "university": "Maharashtra Board of Higher Education",
+      "degree": "Higher Secondary School",
+      "cgpa": "A",
+      "description": "Explored mathematics and science, building a strong analytical mindset and problem-solving abilities."
+    }
+  ],
+  "skills": [
+    {
+      "skill": "JavaScript",
+      "accent": "skill-javascript"
+    },
+    {
+      "skill": "React",
+      "accent": "skill-react"
+    },
+    {
+      "skill": "Vue.js",
+      "accent": "skill-vue"
+    },
+    {
+      "skill": "Node.js",
+      "accent": "skill-node"
+    },
+    {
+      "skill": "MongoDB",
+      "accent": "skill-mongo"
+    },
+    {
+      "skill": "MySQL",
+      "accent": "skill-sql"
+    },
+    {
+      "skill": "AWS",
+      "accent": "skill-aws"
+    }
+  ]
+}
