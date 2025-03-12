@@ -4,7 +4,7 @@ const Hero = () => {
       <h1 className="font-bold p-2 inline-block">
         <span className="text-9xl roboto-slab-hero">
           <span className="text-orange-500">न</span>
-          <span className="text-blue-700">म</span>
+          <span className="text-white">म</span>
           <span className="text-green-600">स्ते</span>
         </span>
         <br />
