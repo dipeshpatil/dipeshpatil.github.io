@@ -27,7 +27,7 @@ const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="nav-link border-4 border-black px-4 py-1 rounded-md bg-white shadow-[2px_2px_0_rgba(0,0,0,1)] hover:scale-105 inline-block"
+                className="nav-link border-4 border-black px-4 py-1 rounded-none bg-white shadow-[2px_2px_0_rgba(0,0,0,1)] hover:scale-105 inline-block"
               >
                 {l.label}
               </a>

@@ -34,7 +34,7 @@ const Hero = () => {
       <div className="mt-8 flex justify-center">
         <a
           href="mailto:dipeshpatil.contact@gmail.com"
-          className="bg-secondary border-4 text-xl border-black px-6 py-3 font-bold shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none hover:scale-105 transition-transform"
+          className="bg-accent border-4 text-xl border-black px-6 py-3 font-bold shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none hover:scale-105 transition-transform"
         >
           Contact Me
         </a>

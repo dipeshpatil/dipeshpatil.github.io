@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="relative w-full text-center py-6 text-black border-t-8 border-black shadow-[0_-6px_0_rgba(0,0,0,1)] mt-10">
+    <footer className="relative w-full text-center py-6 text-black border-t-8 border-black shadow-[0_-6px_0_rgba(0,0,0,1)] mt-4">
       <div className="absolute left-4 bottom-4 w-6 h-6 bg-accent border-4 border-black rounded-full shadow-[2px_2px_0_rgba(0,0,0,1)] rotate-2 hidden sm:block" />
       <div className="absolute right-4 top-4 w-4 h-4 bg-secondary border-4 border-black shadow-[2px_2px_0_rgba(0,0,0,1)] -rotate-3 hidden sm:block" />
 
