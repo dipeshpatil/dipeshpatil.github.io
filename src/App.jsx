@@ -11,13 +11,15 @@ const App = () => {
   return (
     <div className="font-sans">
       <Navbar />
-      <Hero />
-      <About />
-      <Skills />
-      <Education />
-      <Experience />
-      <Projects />
-      <Footer />
+      <div className="p-4">
+        <Hero />
+        <About />
+        <Skills />
+        <Education />
+        <Experience />
+        <Projects />
+        <Footer />
+      </div>
     </div>
   );
 };

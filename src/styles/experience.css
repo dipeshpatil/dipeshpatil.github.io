@@ -13,15 +13,3 @@
 .exp-imprimo {
   @apply bg-[#f4194f] text-white;
 }
-
-.exp-duration {
-  @apply text-gray-600 dark:text-gray-300 text-sm;
-}
-
-.exp-desc {
-  @apply text-gray-800 dark:text-gray-200;
-}
-
-.exp-bullets {
-  @apply text-gray-700 dark:text-gray-400;
-}
