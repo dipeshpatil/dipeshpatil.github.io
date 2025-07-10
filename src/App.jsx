@@ -11,8 +11,8 @@ const App = () => {
   return (
     <div className="font-sans">
       <Navbar />
+      <Hero />
       <div className="p-4">
-        <Hero />
         <About />
         <Skills />
         <Education />
