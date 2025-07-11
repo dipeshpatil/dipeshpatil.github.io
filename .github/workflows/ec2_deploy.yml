@@ -1,0 +1,58 @@
+name: Deploy React App to EC2
+
+# ── Manual trigger ──────────────────────────────────────────────
+on:
+  workflow_dispatch: # ← shows a green “Run workflow” button in the Actions tab
+    inputs: # (optional) pass variables from the UI
+      env:
+        description: "Target environment"
+        required: false
+        default: "prod"
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install dependencies and build
+        run: |
+          npm ci
+          npm run build  # outputs to `dist/`
+
+      - name: Compress dist folder
+        run: tar -czf dist.tar.gz dist
+
+      - name: Upload dist to EC2
+        uses: appleboy/scp-action@v0.1.4
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          port: 22
+          source: "dist.tar.gz"
+          target: "/home/${{ secrets.EC2_USER }}/"
+
+      - name: SSH into EC2 and deploy
+        uses: appleboy/ssh-action@v1.0.0
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_KEY }}
+          port: 22
+          script: |
+            rm -rf /var/www/dipesh-patil-portfolio
+            mkdir -p /var/www/dipesh-patil-portfolio
+            tar -xzf ~/dist.tar.gz -C /var/www/dipesh-patil-portfolio --strip-components=1
+            ls /var/www/dipesh-patil-portfolio
+            sudo systemctl daemon-reexec
+            sudo systemctl daemon-reload
+            sudo systemctl restart nginx
+            rm -rf ~/dist.tar.gz
