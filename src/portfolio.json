@@ -51,9 +51,51 @@
         "Provided ongoing support, maintenance, and updates for Workflow Manager, incorporating user feedback for continuous improvement."
       ],
       "accentColor": "exp-morningstar"
+    },
+    {
+      "company": "Scienslogistics",
+      "role": "Software Development Engineer",
+      "duration": "Jan 2025 - April 2025",
+      "description": "Worked as a Software Engineer in domain of Logistics and Supply Chain Management.",
+      "bullets": [
+        "Designed and built microservices from scratch using Node.js, Docker, Nginx for reverse proxy, and Certbot as SSL Provider, ensuring scalable and secure service architecture. Used AWS EC2 for Development, Staging and Production Environments.",
+        "Developed the core backend functionality for a Shipping Portal, integrating FedEx API to handle shipments and order processing efficiently.",
+        "Designed and implemented an Identity and Access Management (IAM) service, enabling seamless authentication and Role-Based Access Control (RBAC) for upcoming projects.",
+        "Worked with PostgreSQL (Amazon RDS), MongoDB, and Redis, ensuring efficient data storage, retrieval, and caching for optimized system performance.",
+        "Participated in code reviews, improving code quality and maintainability across the team.",
+        "Set up Jenkins and CI/CD pipelines, streamlining automated deployments and reducing release cycle time."
+      ],
+      "accentColor": "exp-scienslogistics"
     }
   ],
   "projects": [
+    {
+      "name": "Hybridisk – Cloud Storage File Manager",
+      "skills": [
+        {
+          "skill": "React.js",
+          "accent": "skill-react"
+        },
+        {
+          "skill": "Node.js",
+          "accent": "skill-node"
+        },
+        {
+          "skill": "PostgreSQL",
+          "accent": "skill-sql"
+        },
+        {
+          "skill": "Express.js",
+          "accent": "skill-express"
+        },
+        {
+          "skill": "AWS S3",
+          "accent": "skill-aws"
+        }
+      ],
+      "description": "Developed a full-stack cloud storage application using React (with Tailwind CSS) and Node.js (NestJS), backed by PostgreSQL for efficient data management. Implemented user authentication with JWT and role-based access control. Enabled seamless file management with upload, sharing, and organization features. Optimized server deployment using AWS EC2, with Nginx as a reverse proxy for load balancing and security. Employed Docker for containerized deployment and ensured scalability with Kubernetes. Focused on performance, dark mode UI, and compliance with design standards.",
+      "links": []
+    },
     {
       "name": "VideoMania",
       "skills": [

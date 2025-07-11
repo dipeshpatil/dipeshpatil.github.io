@@ -13,3 +13,7 @@
 .exp-imprimo {
   @apply bg-[#f4194f] text-white;
 }
+
+.exp-scienslogistics {
+  @apply bg-[#164167] text-white;
+}
