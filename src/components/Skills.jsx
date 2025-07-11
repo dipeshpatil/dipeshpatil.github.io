@@ -33,12 +33,12 @@ const Skills = () => {
         whileInView={{opacity: 1}}
         transition={{delay: 0.1, duration: 0.4}}
         viewport={{once: true}}
-        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4"
+        className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4"
       >
         {skills.map((s, index) => (
           <li
             key={index}
-            className={`text-md text-center px-3 py-2 ${s.accent} border-4 border-black rounded-none shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}
+            className={`text-md text-center px-3 py-2 ${s.accent} border-2 border-black rounded-none shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}
           >
             {s.skill}
           </li>
