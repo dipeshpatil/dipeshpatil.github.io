@@ -7,20 +7,20 @@ const Hero = () => {
 
       {/* Name Block */}
       <h1 className="inline-block p-4">
-        <span className="text-7xl sm:text-9xl font-extrabold leading-tight tracking-tight roboto-slab-hero">
+        <span className="text-9xl sm:text-9xl font-extrabold leading-tight tracking-tight roboto-slab-hero">
           <span className="text-orange-500">न</span>
           <span className="text-blue-600">म</span>
           <span className="text-green-600">स्ते</span>
         </span>
         <br />
-        <span className="text-3xl sm:text-5xl mt-4 inline-block font-light roboto-slab-thin">
+        {/* <span className="text-3xl sm:text-5xl mt-4 inline-block font-light roboto-slab-thin">
           I&apos;m&nbsp;
           <span className="skill-dp28 font-extrabold">DP28</span>
-        </span>
+        </span> */}
       </h1>
 
       {/* Subtext */}
-      <p className="text-base sm:text-lg mt-6 text-gray-800 px-2 sm:px-0">
+      <p className="text-2xl leading-loose mt-6 text-gray-800 px-2 sm:px-0">
         I believe life is a lot like{" "}
         <span className="hero-js font-semibold">JS</span>—sometimes{" "}
         <span className="hero-unpredictable font-semibold">unpredictable</span>,
