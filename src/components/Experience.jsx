@@ -59,7 +59,7 @@ const Experience = () => {
             {exp.bullets &&
               exp.bullets.map((bullet, i) => (
                 <span
-                  className="p-3 block bg-primary border-2 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] my-2"
+                  className="px-3 py-4 block bg-primary border-2 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] my-2"
                   key={i}
                 >
                   {bullet}

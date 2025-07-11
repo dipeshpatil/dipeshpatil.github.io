@@ -3,10 +3,10 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#e0e2ff",
-        secondary: "#7a83ff",
-        accent: "#fc64ab",
-        typo: "#202020"
+        primary: "#f2f2f2", // light neutral
+        secondary: "#3aaed8", // softened aqua blue
+        accent: "#ffd166", // warm golden yellow
+        typo: "#1f1f1f" // soft black
       }
     }
   },

@@ -50,9 +50,7 @@ const Projects = () => {
               ))}
             </ul>
 
-            <p className="text-sm sm:text-base text-typo mb-3">
-              {project.description}
-            </p>
+            <p className="text-typo mb-3">{project.description}</p>
 
             {project.links && (
               <div className="flex flex-wrap gap-3">
