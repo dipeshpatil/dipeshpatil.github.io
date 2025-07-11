@@ -22,7 +22,7 @@ const Education = () => {
         viewport={{once: true}}
         className="text-3xl sm:text-4xl font-extrabold mb-6 tracking-tight"
       >
-        <span className="inline-block bg-primary px-3 py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none">
+        <span className="inline-block bg-accent px-3 py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none">
           Education
         </span>
       </motion.h2>

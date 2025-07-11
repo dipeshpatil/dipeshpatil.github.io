@@ -13,7 +13,7 @@ const Projects = () => {
   return (
     <section
       id="projects"
-      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-secondary text-black border-4 border-black rounded-none shadow-[8px_8px_0_rgba(0,0,0,1)] mt-4"
+      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-primary text-black border-4 border-black rounded-none shadow-[8px_8px_0_rgba(0,0,0,1)] mt-4"
     >
       <motion.h2
         initial={{y: -20, opacity: 0}}
@@ -22,7 +22,7 @@ const Projects = () => {
         viewport={{once: true}}
         className="text-3xl sm:text-4xl font-extrabold mb-6 tracking-tight"
       >
-        <span className="inline-block bg-primary px-3 py-1 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
+        <span className="inline-block bg-secondary px-3 py-1 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
           Projects
         </span>
       </motion.h2>
@@ -35,7 +35,7 @@ const Projects = () => {
             whileInView={{opacity: 1, y: 0}}
             transition={{delay: index * 0.1, type: "spring", stiffness: 200}}
             viewport={{once: true}}
-            className="border-4 border-black rounded-none p-5 bg-white shadow-[6px_6px_0_rgba(0,0,0,1)]"
+            className="border-4 border-black rounded-none p-5 bg-accent shadow-[6px_6px_0_rgba(0,0,0,1)]"
           >
             <h3 className="text-xl sm:text-2xl font-bold mb-2">
               {project.name}

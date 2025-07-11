@@ -20,7 +20,7 @@ const About = () => {
         className="font-extrabold text-3xl sm:text-4xl mb-6 leading-none tracking-tight"
       >
         About&nbsp;
-        <span className="inline-block bg-primary px-2 sm:px-3 py-0.5 sm:py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)]">
+        <span className="inline-block bg-accent px-2 sm:px-3 py-0.5 sm:py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)]">
           Me
         </span>
       </motion.h2>
