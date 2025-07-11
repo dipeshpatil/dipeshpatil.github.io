@@ -3,11 +3,6 @@ name: Deploy React App to EC2
 # ── Manual trigger ──────────────────────────────────────────────
 on:
   workflow_dispatch: # ← shows a green “Run workflow” button in the Actions tab
-    inputs: # (optional) pass variables from the UI
-      env:
-        description: "Target environment"
-        required: false
-        default: "prod"
 
 jobs:
   deploy:
@@ -48,11 +43,11 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           port: 22
           script: |
-            rm -rf /var/www/dipesh-patil-portfolio
-            mkdir -p /var/www/dipesh-patil-portfolio
-            tar -xzf ~/dist.tar.gz -C /var/www/dipesh-patil-portfolio --strip-components=1
-            ls /var/www/dipesh-patil-portfolio
+            sudo rm -rf /var/www/dipesh-patil-portfolio
+            sudo mkdir -p /var/www/dipesh-patil-portfolio
+            sudo tar -xzf ~/dist.tar.gz -C /var/www/dipesh-patil-portfolio --strip-components=1
+            sudo ls /var/www/dipesh-patil-portfolio
             sudo systemctl daemon-reexec
             sudo systemctl daemon-reload
             sudo systemctl restart nginx
-            rm -rf ~/dist.tar.gz
+            sudo rm -rf ~/dist.tar.gz
