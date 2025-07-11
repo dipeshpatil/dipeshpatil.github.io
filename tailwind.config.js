@@ -1,12 +1,13 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
-        primary: "#f2f2f2", // light neutral
-        secondary: "#3aaed8", // softened aqua blue
-        accent: "#ffd166", // warm golden yellow
-        typo: "#1f1f1f" // soft black
+        primary: "var(--color-primary)",
+        secondary: "var(--color-secondary)",
+        accent: "var(--color-accent)",
+        typo: "var(--color-typo)"
       }
     }
   },

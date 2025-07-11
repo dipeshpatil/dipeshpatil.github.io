@@ -11,5 +11,5 @@
 }
 
 .hero-js {
-  @apply text-typo font-bold bg-yellow-300 pb-0.5 pt-3.5 pl-3 pr-1 border-black border-4;
+  @apply text-black font-bold bg-yellow-300 pb-0.5 pt-3.5 pl-3 pr-1 border-black border-4;
 }
