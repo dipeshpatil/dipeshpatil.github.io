@@ -25,8 +25,21 @@
   /* …add more as needed */
 }
 
-/* #1c1c1c: A deep, almost-black gray. It's versatile and widely used in dark mode designs for its neutral appeal.
-#282623: A dark, earthy brown with slight warmth, which complements beige tones beautifully.
-#2f2f2f: A soft black with a hint of gray, offering a subtle alternative to pure black.
-#393531: A muted dark taupe, warm and cohesive with the light shades.
-#252525: A slightly lighter black with a hint of softness, providing a modern, sleek look. */
+/* globals.css (or wherever you include base layers) */
+:root {
+  /* --- LIGHT MODE (default) --- */
+  --color-primary: #f2f2f2;
+  --color-secondary: #3aaed8;
+  --color-accent: #ffd166;
+  --color-typo: #1f1f1f;
+}
+
+/* @media (prefers-color-scheme: dark) { */
+/* :root { */
+/* DARK */
+/* --color-primary: #102c3a; */
+/* --color-secondary: #2677a8; */
+/* --color-accent: #cfa338; */
+/* --color-typo: #f2f2f2; */
+/* } */
+/* } */

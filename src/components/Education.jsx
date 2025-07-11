@@ -44,7 +44,7 @@ const Education = () => {
               <span className="font-medium">{edu.degree}</span> | Grade:{" "}
               <span className="font-medium">{edu.cgpa}</span>
             </p>
-            <p className="edu-desc text-sm sm:text-base text-gray-800">
+            <p className="edu-desc text-sm sm:text-base text-typo">
               {edu.description}
             </p>
           </motion.div>
