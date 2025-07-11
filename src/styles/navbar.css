@@ -1,4 +1,4 @@
 .nav-link {
   @apply transition-all duration-200 ease-in-out
-  hover:font-bold hover:text-red-600 cursor-pointer;
+  hover:font-bold hover:text-accent cursor-pointer;
 }

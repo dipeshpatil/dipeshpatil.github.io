@@ -12,7 +12,7 @@ const App = () => {
     <div className="font-sans">
       <Navbar />
       <Hero />
-      <div className="p-4">
+      <div className="px-4 pt-3 pb-6">
         <About />
         <Skills />
         <Education />

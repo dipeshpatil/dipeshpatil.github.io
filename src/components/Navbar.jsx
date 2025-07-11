@@ -27,7 +27,7 @@ const Navbar = () => {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="nav-link border-4 border-black px-4 py-1 rounded-none bg-white shadow-[2px_2px_0_rgba(0,0,0,1)] hover:scale-105 inline-block"
+                className="nav-link border-4 border-black px-4 py-1 rounded-none bg-primary shadow-[2px_2px_0_rgba(0,0,0,1)] hover:scale-105 inline-block"
               >
                 {l.label}
               </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
           DP28
         </h1>
         <button
-          className="text-3xl font-bold border-4 border-black px-2 py-1 bg-white shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-md"
+          className="text-3xl font-bold border-4 border-black px-2 py-1 bg-primary shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
@@ -64,7 +64,7 @@ const Navbar = () => {
                 <a
                   href={l.href}
                   onClick={() => setIsOpen(false)}
-                  className="nav-link border-4 border-black px-4 py-2 rounded-md bg-white shadow-[2px_2px_0_rgba(0,0,0,1)] inline-block w-full text-center"
+                  className="nav-link border-4 border-black px-4 py-2 rounded-none bg-primary shadow-[2px_2px_0_rgba(0,0,0,1)] inline-block w-full text-center"
                 >
                   {l.label}
                 </a>
