@@ -14,7 +14,7 @@ const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-primary text-black border-4 border-black rounded-none shadow-[8px_8px_0_0_rgba(0,0,0,1)] mt-4"
+      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-primary text-typo border-4 border-black rounded-none shadow-[8px_8px_0_0_rgba(0,0,0,1)] mt-4"
     >
       <motion.h2
         initial={{y: -20, opacity: 0}}
@@ -23,7 +23,7 @@ const Skills = () => {
         viewport={{once: true}}
         className="font-extrabold text-3xl sm:text-4xl mb-6 tracking-tight"
       >
-        <span className="inline-block bg-accent px-3 py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none">
+        <span className="inline-block bg-secondary px-3 py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none">
           Skills
         </span>
       </motion.h2>
@@ -38,7 +38,7 @@ const Skills = () => {
         {skills.map((s, index) => (
           <li
             key={index}
-            className={`text-sm sm:text-base font-semibold text-center px-3 py-2 ${s.accent} border-4 border-black rounded-none shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}
+            className={`text-md text-center px-3 py-2 ${s.accent} border-4 border-black rounded-none shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}
           >
             {s.skill}
           </li>

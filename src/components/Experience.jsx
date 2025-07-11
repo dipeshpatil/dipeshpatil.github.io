@@ -15,7 +15,7 @@ const Experience = () => {
   return (
     <section
       id="experience"
-      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-primary text-black border-4 border-black rounded-none shadow-[8px_8px_0_rgba(0,0,0,1)] mt-4"
+      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-primary text-typo border-4 border-black rounded-none shadow-[8px_8px_0_rgba(0,0,0,1)] mt-4"
     >
       <motion.h2
         initial={{y: -20, opacity: 0}}
@@ -24,7 +24,7 @@ const Experience = () => {
         viewport={{once: true}}
         className="text-3xl sm:text-4xl font-extrabold mb-6 tracking-tight"
       >
-        <span className="inline-block bg-accent px-3 py-1 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
+        <span className="inline-block bg-secondary text-typo px-3 py-1 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
           Experience
         </span>
       </motion.h2>
@@ -37,32 +37,34 @@ const Experience = () => {
             whileInView={{opacity: 1, y: 0}}
             transition={{delay: index * 0.1, type: "spring", stiffness: 200}}
             viewport={{once: true}}
-            className="border-4 border-black rounded-none p-5 shadow-[6px_6px_0_rgba(0,0,0,1)] bg-secondary"
+            className="border-4 border-black p-4 bg-secondary"
           >
-            <h3 className="text-xl sm:text-2xl font-bold">
+            <h3 className="text-xl font-bold text-typo leading-loose">
               <span
-                className={`${exp.accentColor} px-2 py-1 border-4 border-black rounded-none shadow-[2px_2px_0_rgba(0,0,0,1)]`}
+                className={`${exp.accentColor} px-2 py-1 border-2 border-black rounded-none shadow-[4px_4px_0_rgba(0,0,0,1)]`}
               >
                 {exp.company}
               </span>{" "}
               - {exp.role}
             </h3>
 
-            <div className="mt-3 font-medium text-sm sm:text-base text-gray-800">
+            <div className="mt-3 font-medium text-sm sm:text-base text-typo">
               {exp.duration}
             </div>
 
-            <p className="mt-2 text-sm sm:text-base text-gray-800">
+            <p className="mt-2 text-lg sm:text-base text-typo">
               {exp.description}
             </p>
 
-            {exp.bullets && (
-              <ul className="list-disc pl-5 mt-4 space-y-2 text-sm sm:text-base">
-                {exp.bullets.map((bullet, i) => (
-                  <li key={i}>{bullet}</li>
-                ))}
-              </ul>
-            )}
+            {exp.bullets &&
+              exp.bullets.map((bullet, i) => (
+                <span
+                  className="p-3 block bg-primary border-2 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] my-2"
+                  key={i}
+                >
+                  {bullet}
+                </span>
+              ))}
           </motion.div>
         ))}
       </div>

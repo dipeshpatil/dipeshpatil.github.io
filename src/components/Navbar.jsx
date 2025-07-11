@@ -22,12 +22,12 @@ const Navbar = () => {
         </h1>
 
         {/* Links */}
-        <ul className="flex space-x-6 roboto-slab-hero">
+        <ul className="flex space-x-6">
           {links.map(l => (
             <li key={l.href}>
               <a
                 href={l.href}
-                className="nav-link border-4 border-black px-4 py-1 rounded-none bg-primary shadow-[2px_2px_0_rgba(0,0,0,1)] hover:scale-105 inline-block"
+                className="border-2 font-bold border-black px-4 py-2 rounded-none bg-primary text-typo shadow-[4px_4px_0_rgba(0,0,0,1)] hover:scale-105 inline-block hover:text-secondary"
               >
                 {l.label}
               </a>
@@ -42,7 +42,7 @@ const Navbar = () => {
           DP28
         </h1>
         <button
-          className="text-3xl font-bold border-4 border-black px-2 py-1 bg-primary shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none"
+          className="text-3xl font-bold border-black px-2 py-0.5 bg-primary border-2 shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none text-typo"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
@@ -56,15 +56,15 @@ const Navbar = () => {
             initial={{opacity: 0, y: -10}}
             animate={{opacity: 1, y: 0}}
             exit={{opacity: 0, y: -10}}
-            transition={{type: "spring", stiffness: 300, damping: 20}}
-            className="flex flex-col space-y-3 mt-4 roboto-slab-hero md:hidden"
+            transition={{type: "spring", stiffness: 500, damping: 40}}
+            className="flex flex-col space-y-3 mt-4 md:hidden"
           >
             {links.map(l => (
               <li key={l.href}>
                 <a
                   href={l.href}
                   onClick={() => setIsOpen(false)}
-                  className="nav-link border-4 border-black px-4 py-2 rounded-none bg-primary shadow-[2px_2px_0_rgba(0,0,0,1)] inline-block w-full text-center"
+                  className="border-2 border-black font-bold px-4 py-2 rounded-none bg-primary text-typo shadow-[4px_4px_0_rgba(0,0,0,1)] inline-block w-full text-center hover:text-secondary"
                 >
                   {l.label}
                 </a>
