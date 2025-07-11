@@ -7,7 +7,9 @@ const Footer = () => {
       <p className="text-sm sm:text-base font-medium">
         <span className="text-primary">&copy;</span>
         <span className="">&nbsp;{new Date().getFullYear()}&nbsp;</span>
-        <span className="skill-dp28 roboto-slab-hero font-bold">DP28</span>{" "}
+        <span className="skill-brand roboto-slab-hero font-bold">
+          DP28
+        </span>{" "}
         &nbsp;— All rights reserved.
       </p>
     </footer>

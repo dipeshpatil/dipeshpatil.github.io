@@ -17,7 +17,7 @@ const Navbar = () => {
       {/* Desktop layout */}
       <div className="hidden md:flex justify-between items-center max-w-6xl mx-auto">
         {/* Logo */}
-        <h1 className="text-2xl font-extrabold skill-dp28 roboto-slab-hero">
+        <h1 className="text-2xl font-extrabold skill-brand roboto-slab-hero">
           DP28
         </h1>
 
@@ -38,7 +38,7 @@ const Navbar = () => {
 
       {/* Mobile layout */}
       <div className="flex md:hidden justify-between items-center">
-        <h1 className="text-xl font-extrabold skill-dp28 roboto-slab-hero">
+        <h1 className="text-xl font-extrabold skill-brand roboto-slab-hero">
           DP28
         </h1>
         <button

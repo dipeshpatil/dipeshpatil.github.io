@@ -14,6 +14,17 @@
   @apply lobster-regular;
 }
 
+/* ---- custom outlined-text utilities ---- */
+@layer utilities {
+  .text-outline-white {
+    -webkit-text-stroke: 2px #ffffff; /* width + colour */
+  }
+  .text-outline-black {
+    -webkit-text-stroke: 2px #000000;
+  }
+  /* …add more as needed */
+}
+
 /* #1c1c1c: A deep, almost-black gray. It's versatile and widely used in dark mode designs for its neutral appeal.
 #282623: A dark, earthy brown with slight warmth, which complements beige tones beautifully.
 #2f2f2f: A soft black with a hint of gray, offering a subtle alternative to pure black.

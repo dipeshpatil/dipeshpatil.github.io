@@ -1,3 +1,6 @@
+import {greetings} from "../greetings.json";
+import TypewriterHero from "./TypewriterHero";
+
 const Hero = () => {
   return (
     <section className="bg-primary relative w-full max-w-full px-4 sm:px-8 md:px-10 py-24 text-center text-typo border-b-8 border-black shadow-[0_6px_0_0_rgba(0,0,0,1)] overflow-hidden">
@@ -7,15 +10,18 @@ const Hero = () => {
 
       {/* Name Block */}
       <h1 className="inline-block p-4">
-        <span className="text-9xl sm:text-9xl font-extrabold leading-tight tracking-tight roboto-slab-hero">
-          <span className="text-orange-500">न</span>
-          <span className="text-blue-600">म</span>
-          <span className="text-green-600">स्ते</span>
-        </span>
+        {/* <span className="text-8xl font-extrabold leading-tight tracking-tight roboto-slab-hero">
+          {greetings.indian.map((greeting, index) => (
+            <span key={index} className={`text-${greeting.color}`}>
+              {greeting.letter}
+            </span>
+          ))}
+        </span> */}
+        <TypewriterHero greetings={greetings} langs={Object.keys(greetings)} />
         <br />
         {/* <span className="text-3xl sm:text-5xl mt-4 inline-block font-light roboto-slab-thin">
           I&apos;m&nbsp;
-          <span className="skill-dp28 font-extrabold">DP28</span>
+          <span className="skill-brand font-extrabold">DP28</span>
         </span> */}
       </h1>
 

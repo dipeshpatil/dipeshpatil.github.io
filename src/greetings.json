@@ -1,0 +1,74 @@
+{
+  "greetings": {
+    "indian": [
+      {"letter": "न", "color": "orange-500"},
+      {"letter": "म", "color": "white"},
+      {"letter": "स्ते", "color": "green-600"}
+    ],
+
+    "french": [
+      {"letter": "BO", "color": "blue-600"},
+      {"letter": "NJO", "color": "white"},
+      {"letter": "UR", "color": "red-600"}
+    ],
+
+    "spanish": [
+      {"letter": "H", "color": "red-600"},
+      {"letter": "O", "color": "yellow-400"},
+      {"letter": "LA", "color": "red-600"}
+    ],
+
+    "german": [
+      {"letter": "HA", "color": "black"},
+      {"letter": "LL", "color": "red-600"},
+      {"letter": "O", "color": "yellow-400"}
+    ],
+
+    "japanese": [
+      {"letter": "こん", "color": "red-600"},
+      {"letter": "にち", "color": "white"},
+      {"letter": "は", "color": "red-600"}
+    ],
+
+    "chinese": [
+      {"letter": "你", "color": "red-600"},
+      {"letter": "好", "color": "yellow-400"}
+    ],
+
+    "arabic": [
+      {"letter": "مُر", "color": "black"},
+      {"letter": "حَب", "color": "white"},
+      {"letter": "ا", "color": "green-600"}
+    ],
+
+    "russian": [
+      {"letter": "При", "color": "white"},
+      {"letter": "ве", "color": "blue-600"},
+      {"letter": "т", "color": "red-600"}
+    ],
+
+    "italian": [
+      {"letter": "C", "color": "green-600"},
+      {"letter": "IA", "color": "white"},
+      {"letter": "O", "color": "red-600"}
+    ],
+
+    "portuguese": [
+      {"letter": "O", "color": "green-600"},
+      {"letter": "L", "color": "red-600"},
+      {"letter": "á", "color": "yellow-400"}
+    ],
+
+    "korean": [
+      {"letter": "안녕", "color": "red-600"},
+      {"letter": "하세", "color": "blue-600"},
+      {"letter": "요", "color": "white"}
+    ],
+
+    "swahili": [
+      {"letter": "Ha", "color": "black"},
+      {"letter": "ba", "color": "red-600"},
+      {"letter": "ri", "color": "green-600"}
+    ]
+  }
+}
