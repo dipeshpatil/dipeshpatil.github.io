@@ -62,7 +62,7 @@ export default function TypewriterHero({
   }, [charIndex, phase, langIndex, greetings, langs]);
 
   return (
-    <h1 className="bg-gray-500 inline-block px-6 py-4 shadow-[4px_4px_0_0_rgba(0,0,0,1)] border-4 border-black">
+    <h1 className="bg-gray-400 inline-block px-6 py-4 shadow-[4px_4px_0_0_rgba(0,0,0,1)] border-4 border-black">
       <span className="text-6xl font-extrabold leading-tight tracking-tight roboto-slab-hero">
         {currentLetters()}
         <span className="animate-pulse text-primary">|</span>
