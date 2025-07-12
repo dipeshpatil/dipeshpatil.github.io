@@ -27,11 +27,10 @@
 
 /* globals.css (or wherever you include base layers) */
 :root {
-  /* --- LIGHT MODE (default) --- */
-  --color-primary: #f2f2f2;
-  --color-secondary: #3aaed8;
-  --color-accent: #ffd166;
-  --color-typo: #1f1f1f;
+  --color-primary: #fefafe; /* super-soft lavender white */
+  --color-secondary: #3aaed8; /* neon purple (electric grape) */
+  --color-accent: #b4dd4f; /* neon pink (radish pink) */
+  --color-typo: #1a1a1a; /* dark for all text */
 }
 
 /* @media (prefers-color-scheme: dark) { */

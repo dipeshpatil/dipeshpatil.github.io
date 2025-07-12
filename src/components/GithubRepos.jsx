@@ -25,7 +25,7 @@ const GithubRepos = () => {
         viewport={{once: true}}
         className="text-3xl sm:text-4xl font-extrabold mb-8 tracking-tight"
       >
-        <span className="inline-block bg-secondary px-4 py-2 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
+        <span className="inline-block bg-accent px-4 py-2 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
           Featured Repositories
         </span>
       </motion.h2>
@@ -44,7 +44,7 @@ const GithubRepos = () => {
             whileInView={{opacity: 1, y: 0}}
             transition={{delay: index * 0.05, type: "spring", stiffness: 200}}
             viewport={{once: true}}
-            className="border-4 border-black bg-accent rounded-none p-0 shadow-[6px_6px_0_rgba(0,0,0,1)] overflow-hidden"
+            className="border-4 border-black bg-secondary rounded-none p-0 shadow-[6px_6px_0_rgba(0,0,0,1)] overflow-hidden"
           >
             {/* Top accent bar */}
             <div className="h-3 w-full bg-edge" />

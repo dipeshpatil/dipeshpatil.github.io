@@ -17,6 +17,9 @@ const GithubStats = () => {
     totalPRsLastYear,
     lifetimePRs,
     lifetimeIssues,
+    lifetimeCommits,
+    lifetimePRsOpened,
+    lifetimeIssuesOpened,
     topLanguages,
     generatedAt
   } = stats;
@@ -32,7 +35,10 @@ const GithubStats = () => {
 
   const lifetimeMetrics = [
     {label: "Lifetime PRs", value: lifetimePRs},
-    {label: "Lifetime Issues", value: lifetimeIssues}
+    {label: "Lifetime Issues", value: lifetimeIssues},
+    {label: "Lifetime Commits", value: lifetimeCommits},
+    {label: "PRs Opened", value: lifetimePRsOpened},
+    {label: "Issues Opened", value: lifetimeIssuesOpened}
   ];
 
   return (
@@ -53,7 +59,7 @@ const GithubStats = () => {
         </span>
       </motion.h2>
 
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-6 mb-10">
+      <div className="grid grid-cols-2 sm:grid-cols-6 gap-6 mb-10">
         {[...keyMetrics, ...lifetimeMetrics].map((m, i) => (
           <motion.div
             key={m.label}
