@@ -8,15 +8,17 @@
 
 ```bash
 # 1. Clone the repo
-$ git clone <your‑fork‑url> neu‑portfolio && cd neu‑portfolio
+$ git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portfolio && cd neu‑portfolio
 
 # 2. Copy env template → .env
 $ cp .env.sample .env
 
-# 3. Install dependencies
+# 3. Configure Environment Variables in `.env`
+
+# 4. Install dependencies
 $ npm install    # or: pnpm install / yarn
 
-# 4. Run the dev server (http://localhost:5173)
+# 5. Run the dev server (http://localhost:5173)
 $ npm start      # alias for: vite
 ```
 
