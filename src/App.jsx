@@ -6,6 +6,11 @@ import Projects from "./components/Projects";
 import Skills from "./components/Skills";
 import Footer from "./components/Footer";
 import Education from "./components/Education";
+import GithubProfile from "./components/GithubProfile";
+import GithubRepos from "./components/GithubRepos";
+import GithubStats from "./components/GithubStats";
+
+const USE_GITHUB_PROFILE = import.meta.env.VITE_APP_USE_GITHUB_DATA === "true";
 
 const App = () => {
   return (
@@ -18,6 +23,13 @@ const App = () => {
         <Education />
         <Experience />
         <Projects />
+        {USE_GITHUB_PROFILE && (
+          <>
+            <GithubRepos />
+            <GithubStats />
+            <GithubProfile />
+          </>
+        )}
       </div>
       <Footer />
     </div>

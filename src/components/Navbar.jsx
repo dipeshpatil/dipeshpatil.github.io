@@ -9,6 +9,16 @@ const links = [
   {label: "Projects", href: "#projects"}
 ];
 
+const USE_GITHUB_PROFILE = import.meta.env.VITE_APP_USE_GITHUB_DATA === "true";
+
+if (USE_GITHUB_PROFILE) {
+  links.push(
+    {label: "Repos", href: "#github-repos"},
+    {label: "Stats", href: "#github-stats"},
+    {label: "Profile", href: "#github-profile"}
+  );
+}
+
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
