@@ -59,8 +59,8 @@ const GithubProfile = () => {
 
           {/* Name + handle */}
           <h2 className="text-4xl lg:text-5xl font-extrabold roboto-slab-hero flex flex-wrap gap-3">
-            {name}
-            <span className="text-xl mt-2 lg:text-2xl font-medium">
+            <span className="">{name}</span>
+            <span className="text-xl mt-0 lg:text-2xl font-medium skill-brand">
               @{login}
             </span>
           </h2>
@@ -72,18 +72,18 @@ const GithubProfile = () => {
           )}
 
           {/* Meta row */}
-          <div className="mt-6 flex flex-wrap gap-4 text-sm lg:text-base font-semibold text-typo">
+          <div className="mt-2 flex flex-wrap gap-4 text-sm lg:text-base font-semibold text-typo">
             {company && <span>🏢 {company}</span>}
             {location && <span>📍 {location}</span>}
             {hireable && (
-              <span className="px-3 py-0.5 -mt-2 bg-green-400 border-2 border-black shadow-[2px_2px_0_#000] text-black uppercase tracking-wide">
+              <span className="px-3 py-0.5 -mt-1 bg-green-400 border-2 border-black shadow-[2px_2px_0_#000] text-black uppercase tracking-wide">
                 Hireable
               </span>
             )}
           </div>
 
           {/* Stats grid */}
-          <div className="mt-8 grid grid-cols-3 gap-4 text-center">
+          <div className="mt-4 grid grid-cols-3 gap-4 text-center">
             {[
               {label: "Repos", value: public_repos},
               {label: "Followers", value: followers},
@@ -100,7 +100,7 @@ const GithubProfile = () => {
           </div>
 
           {/* Links */}
-          <div className="mt-8 flex flex-wrap gap-4">
+          <div className="mt-4 flex flex-wrap gap-4">
             <a
               href={html_url}
               target="_blank"
