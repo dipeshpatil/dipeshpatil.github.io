@@ -14,16 +14,17 @@ $ git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portf
 
 # 2. Copy env template → .env
 
-````bash
+```bash
 $ cp .env.sample .env
 ```
 
 # 3. Configure Environment Variables in `.env`
+
 ```.env
 VITE_APP_GITHUB_USERNAME=<your-github-username>
 VITE_APP_GITHUB_TOKEN=<your-personal-access-token>
 VITE_APP_USE_GITHUB_DATA=<true|false>
-````
+```
 
 # 4. Install dependencies
 
