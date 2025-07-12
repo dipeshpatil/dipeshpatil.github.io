@@ -326,11 +326,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "compiler",
-      "interpreter",
-      "javascript"
-    ],
+    "topics": ["compiler", "interpreter", "javascript"],
     "visibility": "public",
     "forks": 8,
     "open_issues": 1,
