@@ -6,24 +6,36 @@
 
 ## 🚀 Quick start
 
-```bash
 # 1. Clone the repo
+
+```bash
 $ git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portfolio && cd neu‑portfolio
+```
 
 # 2. Copy env template → .env
+
+````bash
 $ cp .env.sample .env
+```bash
 
 # 3. Configure Environment Variables in `.env`
-$ VITE_APP_GITHUB_USERNAME=<your-github-username>
-$ VITE_APP_GITHUB_TOKEN=<your-personal-access-token>
-$ VITE_APP_USE_GITHUB_DATA=<true|false>
+```.env
+VITE_APP_GITHUB_USERNAME=<your-github-username>
+VITE_APP_GITHUB_TOKEN=<your-personal-access-token>
+VITE_APP_USE_GITHUB_DATA=<true|false>
+````
 
 # 4. Install dependencies
+
+````bash
 $ npm install    # or: pnpm install / yarn
+```bash
 
 # 5. Run the dev server (http://localhost:5173)
+```bash
 $ npm start      # alias for: vite
-```
+```bash
+
 
 > **Tip:** Any time you add or edit variables in `.env`, stop & restart the dev server so Vite picks them up.
 
@@ -31,14 +43,16 @@ $ npm start      # alias for: vite
 
 ## 📂 Project structure (TL;DR)
 
-```
+````
+
 src/
-├─ components/      # React components (Hero, Skills, Projects, …)
-├─ data/            # Json data for supporting the app
-├─ styles/          # CSS files for individual components
-├─ assets/          # Images & icons
-└─ main.jsx         # Vite entry
-```
+├─ components/ # React components (Hero, Skills, Projects, …)
+├─ data/ # Json data for supporting the app
+├─ styles/ # CSS files for individual components
+├─ assets/ # Images & icons
+└─ main.jsx # Vite entry
+
+````
 
 ---
 
@@ -61,8 +75,8 @@ src/
 
 ## 🚢 Deploying to GitHub Pages
 
-1. **Add repository secrets**  
-   \*Navigate: **Repository → Settings → Secrets & variables → Actions → “New repository secret”\***  
+1. **Add repository secrets**
+   \*Navigate: **Repository → Settings → Secrets & variables → Actions → “New repository secret”\***
    Create three secrets:
 
    | Name                    | Example value           |
@@ -77,9 +91,9 @@ src/
    {
      "homepage": "https://<your‑github‑username>.github.io"
    }
-   ```
+````
 
-   Example: https://dipeshpatil.github.io. (This is mine!)
+Example: https://dipeshpatil.github.io. (This is mine!)
 
 3. **Commit these changes to `main` branch**
 
