@@ -65,7 +65,10 @@ async function getLifetimeContributionCounts(createdAtIso) {
 (async () => {
   /* 1. Profile ------------------------------------------------ */
   const profile = await ghREST(`/users/${USER}`).then(r => r.json());
-  await fs.writeFile("./src/profile.json", JSON.stringify(profile, null, 2));
+  await fs.writeFile(
+    "./src/data/profile.json",
+    JSON.stringify(profile, null, 2)
+  );
   console.log("✅ profile.json saved");
 
   /* 2. Repos (REST, paginated) -------------------------------- */
@@ -78,7 +81,7 @@ async function getLifetimeContributionCounts(createdAtIso) {
     const nxt = r.headers.get("link")?.match(/<([^>]+)>;\s*rel="next"/);
     url = nxt ? nxt[1].replace("https://api.github.com", "") : null;
   }
-  await fs.writeFile("./src/repos.json", JSON.stringify(repos, null, 2));
+  await fs.writeFile("./src/data/repos.json", JSON.stringify(repos, null, 2));
   console.log(`✅ repos.json saved (${repos.length} repos)`);
 
   /* 3. Past‑year contribution snapshot ------------------------ */
@@ -152,6 +155,6 @@ async function getLifetimeContributionCounts(createdAtIso) {
     .map(([lang, bytes]) => ({lang, bytes}));
 
   /* 7. Save --------------------------------------------------- */
-  await fs.writeFile("./src/stats.json", JSON.stringify(stats, null, 2));
+  await fs.writeFile("./src/data/stats.json", JSON.stringify(stats, null, 2));
   console.log("✅ stats.json saved");
 })();

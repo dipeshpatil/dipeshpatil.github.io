@@ -1,4 +1,4 @@
-import {education} from "../portfolio.json";
+import {education} from "../data/portfolio.json";
 import {motion} from "framer-motion";
 
 /*

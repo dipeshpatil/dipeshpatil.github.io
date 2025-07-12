@@ -1,4 +1,4 @@
-import {greetings} from "../greetings.json";
+import {greetings} from "../data/greetings.json";
 import TypewriterHero from "./TypewriterHero";
 
 const Hero = () => {

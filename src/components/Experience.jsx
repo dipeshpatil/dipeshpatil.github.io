@@ -1,4 +1,4 @@
-import {experience} from "../portfolio.json";
+import {experience} from "../data/portfolio.json";
 import {motion} from "framer-motion";
 
 const experiences = experience.reverse();

@@ -1,4 +1,4 @@
-import profile from "../profile.json";
+import profile from "../data/profile.json";
 import {motion} from "framer-motion";
 
 /* ----------------------------------------------------------
