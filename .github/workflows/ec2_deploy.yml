@@ -20,6 +20,9 @@ jobs:
       - name: Install dependencies and build
         run: |
           npm ci
+          export VITE_APP_GITHUB_USERNAME=${{secrets.USERNAME}}
+          export VITE_APP_GITHUB_TOKEN=${{secrets.PERSONAL_ACCESS_TOKEN}}
+          export VITE_APP_USE_GITHUB_DATA=${{secrets.USE_GITHUB_DATA}}
           npm run build  # outputs to `dist/`
 
       - name: Compress dist folder
