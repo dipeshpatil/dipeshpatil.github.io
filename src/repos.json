@@ -67,8 +67,8 @@
     "releases_url": "https://api.github.com/repos/dipeshpatil/dipeshpatil.github.io/releases{/id}",
     "deployments_url": "https://api.github.com/repos/dipeshpatil/dipeshpatil.github.io/deployments",
     "created_at": "2021-06-26T11:20:52Z",
-    "updated_at": "2025-07-11T23:44:45Z",
-    "pushed_at": "2025-07-11T23:44:42Z",
+    "updated_at": "2025-07-12T02:45:24Z",
+    "pushed_at": "2025-07-12T02:46:00Z",
     "git_url": "git://github.com/dipeshpatil/dipeshpatil.github.io.git",
     "ssh_url": "git@github.com:dipeshpatil/dipeshpatil.github.io.git",
     "clone_url": "https://github.com/dipeshpatil/dipeshpatil.github.io.git",
@@ -326,11 +326,7 @@
     "allow_forking": true,
     "is_template": false,
     "web_commit_signoff_required": false,
-    "topics": [
-      "compiler",
-      "interpreter",
-      "javascript"
-    ],
+    "topics": ["compiler", "interpreter", "javascript"],
     "visibility": "public",
     "forks": 8,
     "open_issues": 1,
