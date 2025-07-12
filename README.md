@@ -14,6 +14,9 @@ $ git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portf
 $ cp .env.sample .env
 
 # 3. Configure Environment Variables in `.env`
+$ VITE_APP_GITHUB_USERNAME=<your-github-username>
+$ VITE_APP_GITHUB_TOKEN=<your-personal-access-token>
+$ VITE_APP_USE_GITHUB_DATA=<true|false>
 
 # 4. Install dependencies
 $ npm install    # or: pnpm install / yarn
