@@ -9,13 +9,20 @@
 # 1. Clone the repo
 
 ```bash
-git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git <your-github-username>.github.io && cd <your-github-username>.github.io
+git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git
+```
+
+```bash
+cd dipeshpatil.github.io.git
 ```
 
 # 2. Copy env template → .env
 
 ```bash
+# For Linux
 cp .env.sample .env
+# For Windows
+copy .env.sample .env
 ```
 
 # 3. Configure Environment Variables in `.env`
