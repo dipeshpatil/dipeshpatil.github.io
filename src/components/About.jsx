@@ -1,4 +1,4 @@
-import {about} from "../portfolio.json";
+import {about} from "../data/portfolio.json";
 import {motion} from "framer-motion";
 
 const About = () => {

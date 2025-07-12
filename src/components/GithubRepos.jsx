@@ -1,4 +1,4 @@
-import repos from "../repos.json";
+import repos from "../data/repos.json";
 import {motion} from "framer-motion";
 
 const TWELVE_MONTHS_MS = 1000 * 60 * 60 * 24 * 30 * 12; // 12 months in milliseconds

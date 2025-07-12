@@ -24,5 +24,6 @@ yarn-debug.log*
 yarn-error.log*
 
 #user generated content
-public/profile.json
-public/blogs.json
+src/data/profile.json
+src/data/stats.json
+src/data/repos.json
