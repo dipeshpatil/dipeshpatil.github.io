@@ -9,13 +9,13 @@
 # 1. Clone the repo
 
 ```bash
-$ git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portfolio && cd neu‑portfolio
+git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portfolio && cd neu‑portfolio
 ```
 
 # 2. Copy env template → .env
 
 ```bash
-$ cp .env.sample .env
+cp .env.sample .env
 ```
 
 # 3. Configure Environment Variables in `.env`
@@ -29,12 +29,12 @@ VITE_APP_USE_GITHUB_DATA=<true|false>
 # 4. Install dependencies
 
 ````bash
-$ npm install    # or: pnpm install / yarn
+npm install    # or: pnpm install / yarn
 ```bash
 
 # 5. Run the dev server (http://localhost:5173)
 ```bash
-$ npm start      # alias for: vite
+npm start      # alias for: vite
 ```bash
 
 
