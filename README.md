@@ -16,7 +16,7 @@ $ git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portf
 
 ````bash
 $ cp .env.sample .env
-```bash
+```
 
 # 3. Configure Environment Variables in `.env`
 ```.env
