@@ -9,7 +9,7 @@
 # 1. Clone the repo
 
 ```bash
-git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git neu‑portfolio && cd neu‑portfolio
+git clone https://github.com/dipeshpatil/dipeshpatil.github.io.git <your-github-username>.github.io && cd <your-github-username>.github.io
 ```
 
 # 2. Copy env template → .env
@@ -112,4 +112,4 @@ Example: https://dipeshpatil.github.io. (This is mine!)
    - Select `Source`: Deploy from a branch
    - Branch `gh-pages`: Select from the dropdown below `Source`
 
-   Save these changes, empty cach and reload and visit your URL `https://<your‑github‑username>.github.io`
+   Save these changes, empty cache and reload and visit your URL `https://<your‑github‑username>.github.io`
