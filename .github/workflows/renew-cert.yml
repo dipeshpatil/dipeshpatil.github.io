@@ -1,0 +1,24 @@
+# .github/workflows/renew-cert.yml
+name: Renew SSL Certificate on EC2
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # Every Monday at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  renew-cert:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: SSH into EC2 and Renew Cert
+        uses: appleboy/ssh-action@v0.1.4
+        with:
+          host: ${{ secrets.EC2_HOST }}
+          username: ${{ secrets.EC2_USER }}
+          key: ${{ secrets.EC2_SSH_KEY }}
+          script: |
+            echo "Running certbot renew..."
+            sudo certbot renew --quiet
+            echo "Reloading Nginx..."
+            sudo systemctl reload nginx
