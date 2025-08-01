@@ -110,7 +110,7 @@ const GithubStats = () => {
           {topLanguages.map(lang => (
             <li key={lang.lang} className="flex items-center gap-4">
               <span className="w-32 font-semibold">{lang.lang}</span>
-              <div className="flex-1 bg-secondary border-2 border-black h-4 relative">
+              <div className="flex-1 bg-gray-200 border-2 border-gray-300 h-4 relative">
                 <div
                   className="bg-accent h-full"
                   style={{
