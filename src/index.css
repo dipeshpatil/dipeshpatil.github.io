@@ -27,10 +27,10 @@
 
 /* globals.css (or wherever you include base layers) */
 :root {
-  --color-primary: #fefafe; /* super-soft lavender white */
-  --color-secondary: #3aaed8; /* neon purple (electric grape) */
-  --color-accent: #b4dd4f; /* neon pink (radish pink) */
-  --color-typo: #1a1a1a; /* dark for all text */
+  --color-primary: #f0f4f8;
+  --color-secondary: #abeeaa;
+  --color-accent: #ff9a52;
+  --color-typo: #0f0f0f;
 }
 
 /* @media (prefers-color-scheme: dark) { */
