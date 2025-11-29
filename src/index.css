@@ -27,10 +27,10 @@
 
 /* globals.css (or wherever you include base layers) */
 :root {
-  --color-primary: #f0f4f8;
-  --color-secondary: #abeeaa;
-  --color-accent: #ff9a52;
-  --color-typo: #0f0f0f;
+  --color-primary: #fff8e7; /* warm cream */
+  --color-secondary: #c85c5c; /* soft maroon */
+  --color-accent: #efcb68; /* muted gold */
+  --color-typo: #141414;
 }
 
 /* @media (prefers-color-scheme: dark) { */
