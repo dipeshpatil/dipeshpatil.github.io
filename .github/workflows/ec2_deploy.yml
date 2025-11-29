@@ -46,10 +46,10 @@ jobs:
           key: ${{ secrets.EC2_KEY }}
           port: 22
           script: |
-            sudo rm -rf /var/www/dipesh-patil-portfolio
-            sudo mkdir -p /var/www/dipesh-patil-portfolio
-            sudo tar -xzf ~/dist.tar.gz -C /var/www/dipesh-patil-portfolio --strip-components=1
-            sudo ls /var/www/dipesh-patil-portfolio
+            sudo rm -rf /var/www/dipeshpatil.in
+            sudo mkdir -p /var/www/dipeshpatil.in
+            sudo tar -xzf ~/dist.tar.gz -C /var/www/dipeshpatil.in --strip-components=1
+            sudo ls /var/www/dipeshpatil.in
             sudo systemctl daemon-reexec
             sudo systemctl daemon-reload
             sudo systemctl restart nginx
