@@ -1,6 +1,8 @@
 import {greetings} from "../data/greetings.json";
 import TypewriterHero from "./TypewriterHero";
 
+const SHOW_TYPEWRITER = false;
+
 const Hero = () => {
   return (
     <section className="bg-primary relative w-full max-w-full px-4 sm:px-8 md:px-10 py-24 text-center text-typo border-b-8 border-black shadow-[0_6px_0_0_rgba(0,0,0,1)] overflow-hidden">
@@ -9,9 +11,14 @@ const Hero = () => {
       <div className="absolute bottom-6 right-6 w-10 h-10 bg-accent border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] -rotate-2 hidden sm:block" />
 
       {/* Name Block */}
-      <h1 className="inline-block p-4">
-        <TypewriterHero greetings={greetings} langs={Object.keys(greetings)} />
-      </h1>
+      {SHOW_TYPEWRITER && (
+        <h1 className="inline-block p-4">
+          <TypewriterHero
+            greetings={greetings}
+            langs={Object.keys(greetings)}
+          />
+        </h1>
+      )}
 
       {/* Subtext */}
       <p className="text-2xl leading-loose mt-6 text-typo px-2 sm:px-0">
