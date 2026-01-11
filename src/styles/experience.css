@@ -17,3 +17,7 @@
 .exp-scienslogistics {
   @apply bg-[#164167] text-white;
 }
+
+.exp-barq {
+  @apply bg-[#202020] text-white;
+}

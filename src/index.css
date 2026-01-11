@@ -27,18 +27,8 @@
 
 /* globals.css (or wherever you include base layers) */
 :root {
-  --color-primary: #fff8e7; /* warm cream */
-  --color-secondary: #c85c5c; /* soft maroon */
-  --color-accent: #efcb68; /* muted gold */
+  --color-primary: #f0f0f0; /* light grey */
+  --color-secondary: #50c878; /* emerald green */
+  --color-accent: #ffffff; /* pure white */
   --color-typo: #141414;
 }
-
-/* @media (prefers-color-scheme: dark) { */
-/* :root { */
-/* DARK */
-/* --color-primary: #102c3a; */
-/* --color-secondary: #2677a8; */
-/* --color-accent: #cfa338; */
-/* --color-typo: #f2f2f2; */
-/* } */
-/* } */

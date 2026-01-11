@@ -66,9 +66,52 @@
         "Set up Jenkins and CI/CD pipelines, streamlining automated deployments and reducing release cycle time."
       ],
       "accentColor": "exp-scienslogistics"
+    },
+    {
+      "company": "Barq",
+      "role": "Senior Software Engineer",
+      "duration": "April 2025 - Present",
+      "description": "Working as a Senior Software Engineer in domain of Fintech and Lending.",
+      "bullets": [
+        "Designed and developed the FincoBox platform from scratch with a team of 5 engineers, building scalable backend and frontend services using Node.js, Nginx, AWS, and EKS.",
+        "Developed static landing experiences for the FincoBox product using Astro, React, and Vue, ensuring fast load performance and responsive UI.",
+        "Built backend features for push notifications using Python, Django and integrated email delivery pipelines using AWS SQS to enhance customer communication.",
+        "Worked with PostgreSQL (Amazon RDS), MongoDB, and Redis, ensuring efficient data storage, retrieval, and caching for optimized system performance.",
+        "Leveraged Cursor IDE with agentic AI workflows to accelerate development, automate boilerplate code, and improve delivery timelines across services.",
+        "Worked with PostgreSQL, Redis, BullMQ, Docker, and Kubernetes for efficient data management, caching, background job processing, and container orchestration.",
+        "Participated in code reviews, improving code quality, maintainability, and adherence to best practices across the engineering team.",
+        "Set up automated deployment workflows using Jenkins and GitHub Actions, streamlining CI/CD processes and reducing release cycle time significantly."
+      ],
+      "accentColor": "exp-barq"
     }
   ],
   "projects": [
+    {
+      "name": "Chat with Files",
+      "skills": [
+        {
+          "skill": "React.js",
+          "accent": "skill-react"
+        },
+        {
+          "skill": "Node.js",
+          "accent": "skill-node"
+        },
+        {
+          "skill": "PostgreSQL",
+          "accent": "skill-sql"
+        },
+        {
+          "skill": "Express.js",
+          "accent": "skill-express"
+        },
+        {
+          "skill": "AWS S3",
+          "accent": "skill-aws"
+        }
+      ],
+      "description": "I developed a semantic retrieval system that enables users to “chat with their files” by asking natural language questions against uploaded PDFs. The platform extracts content from documents, embeds it using Google Gemini, and stores the vectors in PostgreSQL leveraging the pgvector extension for similarity queries. Incoming user queries are converted to embeddings and resolved via cosine distance, returning contextually relevant answers from large documents. This approach eliminates manual scanning and unlocks knowledge retrieval features such as Q&A and contextual lookup. The solution was built using Node.js, React, Redis, and AWS infrastructure."
+    },
     {
       "name": "Hybridisk – Cloud Storage File Manager",
       "skills": [
