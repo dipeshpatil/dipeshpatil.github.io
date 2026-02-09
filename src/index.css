@@ -27,8 +27,8 @@
 
 /* globals.css (or wherever you include base layers) */
 :root {
-  --color-primary: #f0f0f0; /* light grey */
-  --color-secondary: #50c878; /* emerald green */
-  --color-accent: #ffffff; /* pure white */
+  --color-primary: #f6f8fa;
+  --color-secondary: #cfe8ff; /* soft sky blue */
+  --color-accent: #ffffff;
   --color-typo: #141414;
 }
