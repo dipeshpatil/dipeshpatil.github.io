@@ -1,7 +1,7 @@
 import repos from "../data/repos.json";
 import {motion} from "framer-motion";
 
-const TWELVE_MONTHS_MS = 1000 * 60 * 60 * 24 * 30 * 12; // 12 months in milliseconds
+const TWELVE_MONTHS_MS = 1000 * 60 * 60 * 24 * 30 * 12;
 const STAR_THRESHOLD = 20;
 
 const GithubRepos = () => {
@@ -16,58 +16,60 @@ const GithubRepos = () => {
   return (
     <section
       id="github-repos"
-      className="gh-repos-clay w-full mx-auto px-4 sm:px-8 md:px-10 py-12 text-typo mt-4"
+      className="gh-repos-glass w-full mx-auto px-6 sm:px-8 md:px-10 py-10"
     >
-      <motion.h2
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{type: "spring", stiffness: 250, damping: 20}}
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5}}
         viewport={{once: true}}
-        className="text-3xl sm:text-4xl font-extrabold mb-8 tracking-tight"
       >
-        <span className="gh-repos-clay-pill">Featured Repositories</span>
-      </motion.h2>
+        <span className="glass-pill mb-4 inline-block">Open Source</span>
+        <h2 className="text-3xl sm:text-4xl font-extrabold mb-8 tracking-tight text-white">
+          Featured Repositories
+        </h2>
+      </motion.div>
 
       {curated.length === 0 && (
-        <p className="text-center text-typo text-lg">
-          No recent or high‑star repositories found.
+        <p className="text-center text-slate-400 text-lg">
+          No recent or high-star repositories found.
         </p>
       )}
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {curated.map((repo, index) => (
           <motion.div
             key={repo.id}
             initial={{opacity: 0, y: 20}}
             whileInView={{opacity: 1, y: 0}}
-            transition={{delay: index * 0.05, type: "spring", stiffness: 200}}
+            transition={{delay: index * 0.05, duration: 0.4}}
             viewport={{once: true}}
             className="gh-repo-card"
           >
             <div className="gh-repo-accent-bar" />
 
-            <div className="p-6 flex flex-col h-full justify-between">
+            <div className="p-5 flex flex-col h-full justify-between">
               <div>
-                <h3 className="text-xl font-extrabold mb-1 roboto-slab-hero">
+                <h3 className="text-lg font-bold mb-1 text-white">
                   <a
                     href={
                       repo.html_url ?? `https://github.com/${repo.full_name}`
                     }
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="hover:underline"
+                    className="hover:text-violet-400 transition-colors"
                   >
                     {repo.name}
                   </a>
                 </h3>
                 {repo.description && (
-                  <p className="text-sm sm:text-base text-typo mb-4 line-clamp-3">
+                  <p className="text-sm text-slate-400 mb-4 line-clamp-3">
                     {repo.description}
                   </p>
                 )}
               </div>
 
-              <ul className="flex flex-wrap gap-3 text-xs sm:text-sm font-medium mt-auto pt-4 gh-repo-footer">
+              <ul className="flex flex-wrap gap-2 text-xs font-medium mt-auto pt-4 gh-repo-footer">
                 {repo.language && (
                   <li className="gh-repo-chip uppercase">{repo.language}</li>
                 )}

@@ -1,106 +1,77 @@
-/* ── Claymorphism: Section ── */
-.hero-clay {
-  background: linear-gradient(145deg, #ede6de, #f7f2ec);
-  border-radius: 0;
-  box-shadow:
-    inset 2px 2px 6px rgba(255, 255, 255, 0.7),
-    inset -2px -2px 6px rgba(0, 0, 0, 0.08),
-    0 8px 24px rgba(0, 0, 0, 0.1);
+/* ── Liquid Glass: Hero Section ── */
+.hero-glass {
+  position: relative;
+  background: transparent;
 }
 
-/* ── Claymorphism: Decorative blobs ── */
-.hero-clay-blob {
-  border-radius: 50%;
-  opacity: 0.6;
+.hero-glass::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse at 30% 50%,
+    rgba(124, 58, 237, 0.08) 0%,
+    transparent 60%
+  ),
+  radial-gradient(
+    ellipse at 70% 50%,
+    rgba(6, 182, 212, 0.06) 0%,
+    transparent 60%
+  );
+  pointer-events: none;
 }
 
-.hero-clay-blob--lg {
-  width: 5rem;
-  height: 5rem;
-  background: linear-gradient(145deg, #cec4de, #b0a2c8);
-  box-shadow:
-    inset 3px 3px 6px rgba(255, 255, 255, 0.5),
-    inset -3px -3px 6px rgba(0, 0, 0, 0.08),
-    6px 6px 14px rgba(0, 0, 0, 0.12);
-}
-
-.hero-clay-blob--sm {
-  width: 3rem;
-  height: 3rem;
-  background: linear-gradient(145deg, #f0d999, #e5b04a);
-  border-radius: 30%;
-  box-shadow:
-    inset 2px 2px 5px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 5px rgba(0, 0, 0, 0.08),
-    5px 5px 12px rgba(0, 0, 0, 0.12);
-}
-
-/* ── Claymorphism: CTA button ── */
-.hero-clay-btn {
-  display: inline-block;
-  padding: 0.75rem 1.75rem;
-  border-radius: 1rem;
-  color: #faf5ef;
-  background: linear-gradient(145deg, #b8a9d4, #9684b8);
-  border: none;
-  box-shadow:
-    inset 3px 3px 6px rgba(255, 255, 255, 0.35),
-    inset -2px -2px 5px rgba(0, 0, 0, 0.12),
-    6px 6px 16px rgba(0, 0, 0, 0.15);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
-}
-
-.hero-clay-btn:hover {
-  transform: translateY(-2px);
-  box-shadow:
-    inset 3px 3px 6px rgba(255, 255, 255, 0.4),
-    inset -2px -2px 5px rgba(0, 0, 0, 0.14),
-    8px 10px 22px rgba(0, 0, 0, 0.18);
-}
-
-/* ── Claymorphism: Inline keyword pills ── */
-.hero-unpredictable {
-  color: #9e3b3b;
-  background: linear-gradient(145deg, #f5ddd8, #edc9c2);
-  padding: 0.15rem 0.6rem;
-  border-radius: 0.5rem;
-  box-shadow:
-    inset 1px 1px 3px rgba(255, 255, 255, 0.6),
-    inset -1px -1px 3px rgba(0, 0, 0, 0.06),
-    2px 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-.hero-asynchronous {
-  color: #4a3670;
-  background: linear-gradient(145deg, #e0d8ee, #ccc0e0);
-  padding: 0.15rem 0.6rem;
-  border-radius: 0.5rem;
-  box-shadow:
-    inset 1px 1px 3px rgba(255, 255, 255, 0.6),
-    inset -1px -1px 3px rgba(0, 0, 0, 0.06),
-    2px 3px 6px rgba(0, 0, 0, 0.08);
-}
-
-.hero-console-log {
-  color: #1a6e7e;
-  background: linear-gradient(145deg, #d2eff4, #b4e0ea);
-  padding: 0.15rem 0.6rem;
-  border-radius: 0.5rem;
-  box-shadow:
-    inset 1px 1px 3px rgba(255, 255, 255, 0.6),
-    inset -1px -1px 3px rgba(0, 0, 0, 0.06),
-    2px 3px 6px rgba(0, 0, 0, 0.08);
+.hero-glass-keyword {
+  display: inline;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.375rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
 }
 
 .hero-js {
-  color: #7a5a1e;
+  color: #fbbf24;
+  border-color: rgba(251, 191, 36, 0.2);
+  background: rgba(251, 191, 36, 0.08);
+}
+
+.hero-unpredictable {
+  color: #f472b6;
+  border-color: rgba(244, 114, 182, 0.2);
+  background: rgba(244, 114, 182, 0.08);
+}
+
+.hero-asynchronous {
+  color: #a78bfa;
+  border-color: rgba(167, 139, 250, 0.2);
+  background: rgba(167, 139, 250, 0.08);
+}
+
+.hero-console-log {
+  color: #34d399;
+  border-color: rgba(52, 211, 153, 0.2);
+  background: rgba(52, 211, 153, 0.08);
+}
+
+.hero-glass-btn {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  border-radius: 1rem;
+  color: #fff;
   font-weight: 700;
-  background: linear-gradient(145deg, #f5eacc, #f0d999);
-  padding: 0.15rem 0.6rem;
-  border-radius: 0.5rem;
-  border: none;
-  box-shadow:
-    inset 1px 1px 3px rgba(255, 255, 255, 0.6),
-    inset -1px -1px 3px rgba(0, 0, 0, 0.06),
-    2px 3px 6px rgba(0, 0, 0, 0.08);
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.4), rgba(6, 182, 212, 0.3));
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  box-shadow: 0 0 30px rgba(124, 58, 237, 0.15), 0 8px 32px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.hero-glass-btn:hover {
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.55), rgba(6, 182, 212, 0.45));
+  border-color: rgba(124, 58, 237, 0.6);
+  box-shadow: 0 0 40px rgba(124, 58, 237, 0.3), 0 10px 40px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
 }

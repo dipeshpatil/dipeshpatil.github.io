@@ -15,25 +15,178 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --color-primary: #0a0a1a;
+  --color-secondary: #7c3aed;
+  --color-accent: #06b6d4;
+  --color-typo: #e2e8f0;
+  --glass-bg: rgba(255, 255, 255, 0.05);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  --glass-highlight: rgba(255, 255, 255, 0.15);
+  --glass-blur: 16px;
+  --glow-purple: rgba(124, 58, 237, 0.3);
+  --glow-cyan: rgba(6, 182, 212, 0.3);
+  --glow-pink: rgba(236, 72, 153, 0.3);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-primary);
+  color: var(--color-typo);
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 .section-font {
   @apply lobster-regular;
 }
 
-/* ---- custom outlined-text utilities ---- */
-@layer utilities {
-  .text-outline-white {
-    -webkit-text-stroke: 2px #ffffff; /* width + colour */
-  }
-  .text-outline-black {
-    -webkit-text-stroke: 2px #000000;
-  }
-  /* …add more as needed */
+/* ── Animated background orbs ── */
+@keyframes float-slow {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, -40px) scale(1.05); }
+  66% { transform: translate(-20px, 20px) scale(0.95); }
 }
 
-/* globals.css (or wherever you include base layers) */
-:root {
-  --color-primary: #f0ebe5; /* warm clay beige */
-  --color-secondary: #a694c8; /* muted lavender */
-  --color-accent: #faf5ef; /* soft cream */
-  --color-typo: #2b2623; /* warm charcoal */
+@keyframes float-medium {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  50% { transform: translate(-40px, -30px) scale(1.1); }
+}
+
+@keyframes float-fast {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  25% { transform: translate(20px, -20px) scale(1.05); }
+  50% { transform: translate(-10px, -40px) scale(0.95); }
+  75% { transform: translate(30px, 10px) scale(1.02); }
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(80px);
+  pointer-events: none;
+  z-index: 0;
+  will-change: transform;
+}
+
+.bg-orb--purple {
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(124, 58, 237, 0.25), transparent 70%);
+  top: -100px;
+  left: -100px;
+  animation: float-slow 20s ease-in-out infinite;
+}
+
+.bg-orb--cyan {
+  width: 400px;
+  height: 400px;
+  background: radial-gradient(circle, rgba(6, 182, 212, 0.2), transparent 70%);
+  top: 40%;
+  right: -80px;
+  animation: float-medium 25s ease-in-out infinite;
+}
+
+.bg-orb--pink {
+  width: 350px;
+  height: 350px;
+  background: radial-gradient(circle, rgba(236, 72, 153, 0.15), transparent 70%);
+  bottom: 10%;
+  left: 20%;
+  animation: float-fast 18s ease-in-out infinite;
+}
+
+.bg-orb--blue {
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(59, 130, 246, 0.15), transparent 70%);
+  top: 60%;
+  left: -50px;
+  animation: float-slow 22s ease-in-out infinite reverse;
+}
+
+/* ── Shared glass panel ── */
+.glass-panel {
+  background: var(--glass-bg);
+  backdrop-filter: blur(var(--glass-blur));
+  -webkit-backdrop-filter: blur(var(--glass-blur));
+  border: 1px solid var(--glass-border);
+  border-radius: 1.25rem;
+}
+
+/* ── Glass section heading pill ── */
+.glass-pill {
+  display: inline-block;
+  padding: 0.25rem 1rem;
+  border-radius: 9999px;
+  background: rgba(124, 58, 237, 0.15);
+  border: 1px solid rgba(124, 58, 237, 0.3);
+  color: #c4b5fd;
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+/* ── Glass card ── */
+.glass-card {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 1rem;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(124, 58, 237, 0.3);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.1);
+}
+
+/* ── Glass button ── */
+.glass-btn {
+  display: inline-block;
+  padding: 0.6rem 1.5rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  background: rgba(124, 58, 237, 0.2);
+  border: 1px solid rgba(124, 58, 237, 0.4);
+  color: #c4b5fd;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  transition: all 0.3s ease;
+}
+
+.glass-btn:hover {
+  background: rgba(124, 58, 237, 0.35);
+  border-color: rgba(124, 58, 237, 0.6);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.25);
+  transform: translateY(-1px);
+}
+
+/* ── Scrollbar styling ── */
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(124, 58, 237, 0.3);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(124, 58, 237, 0.5);
+}
+
+::selection {
+  background: rgba(124, 58, 237, 0.4);
+  color: #fff;
 }

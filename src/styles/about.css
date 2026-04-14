@@ -1,56 +1,26 @@
-/* ── Claymorphism: About section ── */
-.about-clay {
-  background: linear-gradient(145deg, #b8a9d4, #9684b8);
-  border-radius: 1.25rem;
-  border: none;
-  box-shadow:
-    inset 3px 3px 8px rgba(255, 255, 255, 0.3),
-    inset -3px -3px 8px rgba(0, 0, 0, 0.1),
-    8px 8px 24px rgba(0, 0, 0, 0.12);
+/* ── Liquid Glass: About Section ── */
+.about-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-/* ── Decorative blobs ── */
-.about-clay-blob {
+.about-glass::before {
+  content: "";
   position: absolute;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.about-clay-blob--lg {
-  top: -1rem;
-  right: -1rem;
-  width: 4.5rem;
-  height: 4.5rem;
-  background: linear-gradient(145deg, #f5f0ea, #e2dad0);
-  box-shadow:
-    inset 3px 3px 6px rgba(255, 255, 255, 0.5),
-    inset -3px -3px 6px rgba(0, 0, 0, 0.08),
-    6px 6px 14px rgba(0, 0, 0, 0.12);
-}
-
-.about-clay-blob--sm {
-  bottom: -0.75rem;
-  left: -0.75rem;
-  width: 2.75rem;
-  height: 2.75rem;
-  border-radius: 35%;
-  background: linear-gradient(145deg, #f0d999, #e5b04a);
-  box-shadow:
-    inset 2px 2px 5px rgba(255, 255, 255, 0.5),
-    inset -2px -2px 5px rgba(0, 0, 0, 0.08),
-    5px 5px 12px rgba(0, 0, 0, 0.12);
-}
-
-/* ── Heading pill ── */
-.about-clay-pill {
-  display: inline-block;
-  padding: 0.15rem 0.75rem;
-  border-radius: 0.625rem;
-  background: linear-gradient(145deg, #f5f0ea, #dfd7cd);
-  color: var(--color-typo);
-  border: none;
-  box-shadow:
-    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.06),
-    3px 3px 8px rgba(0, 0, 0, 0.1);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124, 58, 237, 0.4),
+    rgba(6, 182, 212, 0.3),
+    transparent
+  );
 }

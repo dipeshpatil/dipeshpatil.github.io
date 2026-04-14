@@ -1,41 +1,54 @@
 import {greetings} from "../data/greetings.json";
 import TypewriterHero from "./TypewriterHero";
+import {motion} from "framer-motion";
 
 const SHOW_TYPEWRITER = false;
 
 const Hero = () => {
   return (
-    <section className="hero-clay relative w-full max-w-full px-4 sm:px-8 md:px-10 py-24 text-center text-typo overflow-hidden">
-      <div className="hero-clay-blob hero-clay-blob--lg absolute top-8 left-8 hidden sm:block" />
-      <div className="hero-clay-blob hero-clay-blob--sm absolute bottom-8 right-8 hidden sm:block" />
-
+    <section className="hero-glass relative w-full max-w-full px-4 sm:px-8 md:px-10 py-28 text-center overflow-hidden">
       {SHOW_TYPEWRITER && (
-        <h1 className="inline-block p-4">
+        <motion.h1
+          initial={{opacity: 0, y: 20}}
+          animate={{opacity: 1, y: 0}}
+          transition={{duration: 0.6}}
+          className="inline-block p-4"
+        >
           <TypewriterHero
             greetings={greetings}
             langs={Object.keys(greetings)}
           />
-        </h1>
+        </motion.h1>
       )}
 
-      <p className="text-2xl leading-loose mt-6 text-typo px-2 sm:px-0">
+      <motion.p
+        initial={{opacity: 0, y: 30}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 0.7, delay: 0.1}}
+        className="text-xl sm:text-2xl leading-relaxed mt-6 text-slate-300 px-2 sm:px-0 max-w-3xl mx-auto"
+      >
         I believe life is a lot like{" "}
-        <span className="hero-js font-semibold">JS</span>—sometimes{" "}
-        <span className="hero-unpredictable font-semibold">unpredictable</span>,
+        <span className="hero-glass-keyword hero-js font-semibold">JS</span>—sometimes{" "}
+        <span className="hero-glass-keyword hero-unpredictable font-semibold">unpredictable</span>,
         occasionally{" "}
-        <span className="hero-asynchronous font-semibold">asynchronous</span>,
+        <span className="hero-glass-keyword hero-asynchronous font-semibold">asynchronous</span>,
         but always worth{" "}
-        <span className="hero-console-log font-semibold">console logging</span>.
-      </p>
+        <span className="hero-glass-keyword hero-console-log font-semibold">console logging</span>.
+      </motion.p>
 
-      <div className="mt-10 flex justify-center">
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        animate={{opacity: 1, y: 0}}
+        transition={{duration: 0.6, delay: 0.3}}
+        className="mt-10 flex justify-center"
+      >
         <a
           href="mailto:dipeshpatil.contact@gmail.com"
-          className="hero-clay-btn text-3xl font-bold"
+          className="hero-glass-btn text-lg sm:text-xl"
         >
           Contact Me
         </a>
-      </div>
+      </motion.div>
     </section>
   );
 };

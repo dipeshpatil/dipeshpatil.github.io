@@ -1,47 +1,57 @@
-/* ── Claymorphism: Education section ── */
-.edu-clay {
-  background: linear-gradient(145deg, #b8a9d4, #9684b8);
-  border-radius: 1.25rem;
-  border: none;
-  box-shadow:
-    inset 3px 3px 8px rgba(255, 255, 255, 0.3),
-    inset -3px -3px 8px rgba(0, 0, 0, 0.1),
-    8px 8px 24px rgba(0, 0, 0, 0.12);
+/* ── Liquid Glass: Education Section ── */
+.edu-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-/* ── Heading pill ── */
-.edu-clay-pill {
-  display: inline-block;
-  padding: 0.15rem 0.75rem;
-  border-radius: 0.625rem;
-  background: linear-gradient(145deg, #f5f0ea, #dfd7cd);
-  color: var(--color-typo);
-  border: none;
-  box-shadow:
-    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.06),
-    3px 3px 8px rgba(0, 0, 0, 0.1);
+.edu-glass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(6, 182, 212, 0.4),
+    rgba(124, 58, 237, 0.3),
+    transparent
+  );
 }
 
 /* ── Timeline item ── */
 .edu-timeline-item {
   position: relative;
-  padding-left: 1.75rem;
-  border-left: 3px solid rgba(255, 255, 255, 0.35);
+  padding-left: 2rem;
+  border-left: 1px solid rgba(124, 58, 237, 0.2);
 }
 
 /* ── Timeline dot ── */
 .edu-timeline-dot {
   position: absolute;
-  left: -9px;
+  left: -6px;
   top: 0.35rem;
-  width: 1rem;
-  height: 1rem;
+  width: 0.75rem;
+  height: 0.75rem;
   border-radius: 50%;
-  background: linear-gradient(145deg, #f5f0ea, #d8cfc5);
-  border: none;
-  box-shadow:
-    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.7),
-    inset -1.5px -1.5px 3px rgba(0, 0, 0, 0.1),
-    2px 2px 6px rgba(0, 0, 0, 0.15);
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  box-shadow: 0 0 10px rgba(124, 58, 237, 0.4);
+}
+
+.edu-college {
+  color: #a78bfa;
+}
+
+.edu-degree {
+  color: rgba(226, 232, 240, 0.7);
+}
+
+.edu-desc {
+  color: rgba(226, 232, 240, 0.6);
 }

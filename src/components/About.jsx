@@ -5,28 +5,26 @@ const About = () => {
   return (
     <section
       id="about"
-      className="about-clay relative w-full mx-auto px-4 sm:px-8 md:px-10 py-10 text-typo overflow-hidden mt-2"
+      className="about-glass w-full mx-auto px-6 sm:px-8 md:px-10 py-10"
     >
-      <div className="about-clay-blob about-clay-blob--lg hidden sm:block" />
-      <div className="about-clay-blob about-clay-blob--sm hidden sm:block" />
-
-      <motion.h2
-        initial={{y: -20, opacity: 0}}
-        whileInView={{y: 0, opacity: 1}}
-        transition={{type: "spring", stiffness: 250, damping: 20}}
+      <motion.div
+        initial={{opacity: 0, y: 20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5}}
         viewport={{once: true}}
-        className="font-extrabold text-3xl sm:text-4xl mb-6 leading-none tracking-tight"
       >
-        About&nbsp;
-        <span className="about-clay-pill">Me</span>
-      </motion.h2>
+        <span className="glass-pill mb-4 inline-block">About</span>
+        <h2 className="font-extrabold text-3xl sm:text-4xl mb-6 leading-none tracking-tight text-white">
+          About Me
+        </h2>
+      </motion.div>
 
       <motion.p
-        initial={{x: -20, opacity: 0}}
-        whileInView={{x: 0, opacity: 1}}
-        transition={{delay: 0.05, type: "spring", stiffness: 200, damping: 18}}
+        initial={{opacity: 0, y: 15}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{delay: 0.1, duration: 0.5}}
         viewport={{once: true}}
-        className="text-base sm:text-lg leading-relaxed tracking-wide"
+        className="text-base sm:text-lg leading-relaxed text-slate-300/90"
       >
         {about}
       </motion.p>

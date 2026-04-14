@@ -1,7 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap");
-
-/* <uniquifier>: Use a unique and descriptive class name
-<weight>: Use a value from 100 to 700 */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Roboto+Slab:wght@100..900&family=JetBrains+Mono:wght@400;500;600;700&display=swap");
 
 .roboto-slab-hero {
   font-family: "Roboto Slab", serif;
@@ -24,29 +21,14 @@
   font-style: normal;
 }
 
-.roboto-mono-title {
-  font-family: "Roboto Mono", serif;
-  font-optical-sizing: auto;
-  font-weight: 700;
-  font-style: normal;
-}
-
-.roboto-mono-section {
-  font-family: "Roboto Mono", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
-
-.roboto-mono-text {
-  font-family: "Roboto Mono", serif;
-  font-optical-sizing: auto;
+.jetbrains-mono {
+  font-family: "JetBrains Mono", monospace;
   font-weight: 500;
   font-style: normal;
 }
 
 .lobster-regular {
-  font-family: "Lobster", serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-style: normal;
 }

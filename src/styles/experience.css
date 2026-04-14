@@ -1,93 +1,99 @@
-/* ── Claymorphism: Experience section ── */
-.exp-clay {
-  background: linear-gradient(145deg, #ede6de, #f7f2ec);
-  border-radius: 1.25rem;
-  border: none;
-  box-shadow:
-    inset 3px 3px 8px rgba(255, 255, 255, 0.7),
-    inset -3px -3px 8px rgba(0, 0, 0, 0.08),
-    8px 8px 24px rgba(0, 0, 0, 0.12);
+/* ── Liquid Glass: Experience Section ── */
+.exp-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 1.5rem;
+  position: relative;
+  overflow: hidden;
 }
 
-/* ── Heading pill ── */
-.exp-clay-pill {
-  display: inline-block;
-  padding: 0.15rem 0.75rem;
-  border-radius: 0.625rem;
-  background: linear-gradient(145deg, #faf5ef, #ede6de);
-  color: var(--color-typo);
-  border: none;
-  box-shadow:
-    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.06),
-    3px 3px 8px rgba(0, 0, 0, 0.1);
+.exp-glass::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(124, 58, 237, 0.4),
+    rgba(236, 72, 153, 0.3),
+    transparent
+  );
 }
 
 /* ── Experience card ── */
-.exp-clay-card {
-  padding: 1.25rem;
+.exp-glass-card {
+  padding: 1.5rem;
   border-radius: 1rem;
-  border: none;
-  background: linear-gradient(145deg, #b8a9d4, #9684b8);
-  box-shadow:
-    inset 3px 3px 6px rgba(255, 255, 255, 0.3),
-    inset -3px -3px 6px rgba(0, 0, 0, 0.1),
-    6px 6px 16px rgba(0, 0, 0, 0.12);
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: all 0.3s ease;
 }
 
-/* ── Company badge (shared base) ── */
+.exp-glass-card:hover {
+  border-color: rgba(124, 58, 237, 0.25);
+  box-shadow: 0 8px 32px rgba(124, 58, 237, 0.08);
+}
+
+/* ── Company badge ── */
 .exp-company-badge {
   display: inline-block;
   padding: 0.15rem 0.6rem;
   border-radius: 0.5rem;
-  border: none;
-  box-shadow:
-    inset 2px 2px 4px rgba(255, 255, 255, 0.25),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
-    3px 3px 8px rgba(0, 0, 0, 0.15);
+  font-weight: 600;
 }
 
-/* ── Bullet items ── */
-.exp-clay-bullet {
-  display: block;
-  padding: 0.75rem 1rem;
-  margin: 0.5rem 0;
-  border-radius: 0.75rem;
-  border: none;
-  background: linear-gradient(145deg, #f0ebe5, #e2dad0);
-  box-shadow:
-    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
-    inset -2px -2px 4px rgba(0, 0, 0, 0.06),
-    3px 3px 8px rgba(0, 0, 0, 0.08);
-}
-
-/* ── Per-company accent colors (clay gradients) ── */
 .exp-jio {
-  color: #e0e7ff;
-  background: linear-gradient(145deg, #5a82d8, #2e58b0);
+  color: #60a5fa;
+  background: rgba(96, 165, 250, 0.12);
+  border: 1px solid rgba(96, 165, 250, 0.25);
 }
 
 .exp-morningstar {
-  color: #faf0ef;
-  background: linear-gradient(145deg, #e8887d, #c44a3c);
+  color: #f87171;
+  background: rgba(248, 113, 113, 0.12);
+  border: 1px solid rgba(248, 113, 113, 0.25);
 }
 
 .exp-browserstack {
-  color: #faf3ed;
-  background: linear-gradient(145deg, #e8a06e, #cc7840);
+  color: #fb923c;
+  background: rgba(251, 146, 60, 0.12);
+  border: 1px solid rgba(251, 146, 60, 0.25);
 }
 
 .exp-imprimo {
-  color: #fae8ef;
-  background: linear-gradient(145deg, #e07a8a, #c43a55);
+  color: #f472b6;
+  background: rgba(244, 114, 182, 0.12);
+  border: 1px solid rgba(244, 114, 182, 0.25);
 }
 
 .exp-scienslogistics {
-  color: #e0f0fa;
-  background: linear-gradient(145deg, #4a88b8, #264a6e);
+  color: #38bdf8;
+  background: rgba(56, 189, 248, 0.12);
+  border: 1px solid rgba(56, 189, 248, 0.25);
 }
 
 .exp-barq {
-  color: #e5e2e0;
-  background: linear-gradient(145deg, #504a45, #2e2a26);
+  color: #94a3b8;
+  background: rgba(148, 163, 184, 0.1);
+  border: 1px solid rgba(148, 163, 184, 0.2);
+}
+
+/* ── Bullet items ── */
+.exp-glass-bullet {
+  display: block;
+  padding: 0.65rem 1rem;
+  margin: 0.4rem 0;
+  border-radius: 0.625rem;
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  color: rgba(226, 232, 240, 0.85);
+  font-size: 0.9rem;
+  line-height: 1.5;
 }

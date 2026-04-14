@@ -23,16 +23,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="nav-clay sticky top-0 left-0 w-full z-50 py-3 px-4">
+    <nav className="nav-glass sticky top-0 left-0 w-full z-50 py-3 px-4">
       <div className="hidden md:flex justify-between items-center max-w-6xl mx-auto">
-        <h1 className="text-2xl font-extrabold nav-clay-brand roboto-slab-hero">
+        <h1 className="text-xl font-extrabold nav-glass-brand roboto-slab-hero tracking-tight">
           DP28
         </h1>
 
-        <ul className="flex space-x-4">
+        <ul className="flex items-center gap-1">
           {links.map(l => (
             <li key={l.href}>
-              <a href={l.href} className="nav-clay-link">
+              <a href={l.href} className="nav-glass-link">
                 {l.label}
               </a>
             </li>
@@ -41,14 +41,15 @@ const Navbar = () => {
       </div>
 
       <div className="flex md:hidden justify-between items-center">
-        <h1 className="text-xl font-extrabold nav-clay-brand roboto-slab-hero">
+        <h1 className="text-lg font-extrabold nav-glass-brand roboto-slab-hero">
           DP28
         </h1>
         <button
-          className="nav-clay-hamburger"
+          className="nav-glass-hamburger"
           onClick={() => setIsOpen(!isOpen)}
+          aria-label="Toggle menu"
         >
-          ☰
+          {isOpen ? "✕" : "☰"}
         </button>
       </div>
 
@@ -59,14 +60,14 @@ const Navbar = () => {
             animate={{opacity: 1, y: 0}}
             exit={{opacity: 0, y: -10}}
             transition={{type: "spring", stiffness: 500, damping: 40}}
-            className="flex flex-col space-y-3 mt-4 md:hidden"
+            className="flex flex-col gap-2 mt-4 md:hidden"
           >
             {links.map(l => (
               <li key={l.href}>
                 <a
                   href={l.href}
                   onClick={() => setIsOpen(false)}
-                  className="nav-clay-link nav-clay-link--mobile"
+                  className="nav-glass-link nav-glass-link--mobile"
                 >
                   {l.label}
                 </a>
