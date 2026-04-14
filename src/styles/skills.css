@@ -1,67 +1,192 @@
-.skill-brand {
-  @apply bg-red-600 text-white px-2 py-1 border-2 border-black rounded-none shadow-[4px_4px_0_rgba(0,0,0,1)];
+/* ── Claymorphism: Skills section ── */
+.skills-clay {
+  background: linear-gradient(145deg, #ede6de, #f7f2ec);
+  border-radius: 1.25rem;
+  border: none;
+  box-shadow:
+    inset 3px 3px 8px rgba(255, 255, 255, 0.7),
+    inset -3px -3px 8px rgba(0, 0, 0, 0.08),
+    8px 8px 24px rgba(0, 0, 0, 0.12);
 }
 
+/* ── Heading pill ── */
+.skills-clay-pill {
+  display: inline-block;
+  padding: 0.15rem 0.75rem;
+  border-radius: 0.625rem;
+  background: linear-gradient(145deg, #faf5ef, #ede6de);
+  color: var(--color-typo);
+  border: none;
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.7),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.06),
+    3px 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Base chip (shared clay shape) ── */
+.skill-chip {
+  text-align: center;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.75rem;
+  border: none;
+  font-weight: 500;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-chip:hover {
+  transform: translateY(-2px);
+}
+
+/* ── Per-skill clay chips ── */
 .skill-javascript {
-  @apply bg-yellow-400 text-black px-2 py-1;
+  color: #7a5a1e;
+  background: linear-gradient(145deg, #f5eacc, #ebd68e);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.08),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-react {
-  @apply bg-cyan-400 text-black px-2 py-1;
+  color: #1a6e7e;
+  background: linear-gradient(145deg, #d2eff4, #8dd4e0);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.08),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-node {
-  @apply bg-green-700 text-white px-2 py-1;
+  color: #f0f5f2;
+  background: linear-gradient(145deg, #4aad6e, #2e8a50);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-mongo {
-  @apply bg-green-400 text-black px-2 py-1;
+  color: #1e4a2d;
+  background: linear-gradient(145deg, #b5e4c5, #78c99a);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.5),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.08),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-sql {
-  @apply bg-blue-500 text-white px-2 py-1;
+  color: #eef3fa;
+  background: linear-gradient(145deg, #7baed8, #5a90c0);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-aws {
-  @apply bg-blue-700 text-white px-2 py-1;
+  color: #eef0fa;
+  background: linear-gradient(145deg, #8e96d6, #5c56a8);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-vue {
-  @apply bg-gray-700 text-white px-2 py-1;
+  color: #f0f0ef;
+  background: linear-gradient(145deg, #7d8088, #4a4d55);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.2),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-express {
-  @apply bg-blue-400 text-white px-2 py-1;
+  color: #eef3fa;
+  background: linear-gradient(145deg, #a4c4e4, #7baed8);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.4),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.08),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-php {
-  @apply bg-[#7277ad] text-white px-2 py-1;
+  color: #eef0fa;
+  background: linear-gradient(145deg, #b0b8e0, #8085b0);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.35),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .skill-redis {
-  @apply bg-red-500 text-white px-2 py-1;
+  color: #faf0ef;
+  background: linear-gradient(145deg, #e8a49c, #cc6b60);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-rest {
-  @apply bg-blue-500 text-white px-2 py-1;
+  color: #eef3fa;
+  background: linear-gradient(145deg, #7baed8, #5a90c0);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-postman {
-  @apply bg-orange-500 text-white px-2 py-1;
+  color: #faf3ed;
+  background: linear-gradient(145deg, #e8b07d, #d08a50);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.35),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-docker {
-  @apply bg-blue-500 text-white px-2 py-1;
+  color: #eef3fa;
+  background: linear-gradient(145deg, #7baed8, #5a90c0);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-kubernetes {
-  @apply bg-blue-700 text-white px-2 py-1;
+  color: #eef0fa;
+  background: linear-gradient(145deg, #8e96d6, #5c56a8);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-git {
-  @apply bg-gray-500 text-white px-2 py-1;
+  color: #f0f0ef;
+  background: linear-gradient(145deg, #a5a09a, #7d7870);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.3),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.1),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }
 
 .skill-jenkins {
-  @apply bg-red-600 text-white px-2 py-1;
+  color: #faf0ef;
+  background: linear-gradient(145deg, #e8887d, #c44a3c);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+.skill-brand {
+  color: #faf0ef;
+  background: linear-gradient(145deg, #e8887d, #c44a3c);
+  box-shadow:
+    inset 2px 2px 4px rgba(255, 255, 255, 0.25),
+    inset -2px -2px 4px rgba(0, 0, 0, 0.12),
+    4px 4px 10px rgba(0, 0, 0, 0.12);
 }

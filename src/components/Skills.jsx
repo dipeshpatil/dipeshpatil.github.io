@@ -1,20 +1,11 @@
 import {skills} from "../data/portfolio.json";
 import {motion} from "framer-motion";
 
-/*
-  ------------------------------
-  Neue‑Brutalist Skills Section
-  ------------------------------
-  – Big chunky skill chips
-  – Grid layout with harsh contrast
-  – Responsive + animated entrance
-*/
-
 const Skills = () => {
   return (
     <section
       id="skills"
-      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-10 bg-primary text-typo border-4 border-black rounded-none shadow-[8px_8px_0_0_rgba(0,0,0,1)] mt-4"
+      className="skills-clay w-full mx-auto px-4 sm:px-8 md:px-10 py-10 text-typo mt-4"
     >
       <motion.h2
         initial={{y: -20, opacity: 0}}
@@ -23,9 +14,7 @@ const Skills = () => {
         viewport={{once: true}}
         className="font-extrabold text-3xl sm:text-4xl mb-6 tracking-tight"
       >
-        <span className="inline-block bg-accent px-3 py-1 border-4 border-black shadow-[4px_4px_0_0_rgba(0,0,0,1)] rounded-none">
-          Skills
-        </span>
+        <span className="skills-clay-pill">Skills</span>
       </motion.h2>
 
       <motion.ul
@@ -36,10 +25,7 @@ const Skills = () => {
         className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-7 gap-4"
       >
         {skills.map((s, index) => (
-          <li
-            key={index}
-            className={`text-md text-center px-3 py-2 ${s.accent} border-2 border-black rounded-none shadow-[4px_4px_0_0_rgba(0,0,0,1)]`}
-          >
+          <li key={index} className={`skill-chip ${s.accent}`}>
             {s.skill}
           </li>
         ))}

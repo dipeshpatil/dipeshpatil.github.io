@@ -23,22 +23,16 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 left-0 w-full bg-secondary border-b-8 border-black z-50 py-3 px-4 shadow-[0_4px_0_rgba(0,0,0,1)]">
-      {/* Desktop layout */}
+    <nav className="nav-clay sticky top-0 left-0 w-full z-50 py-3 px-4">
       <div className="hidden md:flex justify-between items-center max-w-6xl mx-auto">
-        {/* Logo */}
-        <h1 className="text-2xl font-extrabold skill-brand roboto-slab-hero">
+        <h1 className="text-2xl font-extrabold nav-clay-brand roboto-slab-hero">
           DP28
         </h1>
 
-        {/* Links */}
-        <ul className="flex space-x-6">
+        <ul className="flex space-x-4">
           {links.map(l => (
             <li key={l.href}>
-              <a
-                href={l.href}
-                className="border-2 font-bold border-black px-4 py-2 rounded-none bg-primary text-typo shadow-[4px_4px_0_rgba(0,0,0,1)] hover:scale-105 inline-block hover:text-secondary"
-              >
+              <a href={l.href} className="nav-clay-link">
                 {l.label}
               </a>
             </li>
@@ -46,20 +40,18 @@ const Navbar = () => {
         </ul>
       </div>
 
-      {/* Mobile layout */}
       <div className="flex md:hidden justify-between items-center">
-        <h1 className="text-xl font-extrabold skill-brand roboto-slab-hero">
+        <h1 className="text-xl font-extrabold nav-clay-brand roboto-slab-hero">
           DP28
         </h1>
         <button
-          className="text-3xl font-bold border-black px-2 py-0.5 bg-primary border-2 shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none text-typo"
+          className="nav-clay-hamburger"
           onClick={() => setIsOpen(!isOpen)}
         >
           ☰
         </button>
       </div>
 
-      {/* Mobile dropdown */}
       <AnimatePresence>
         {isOpen && (
           <motion.ul
@@ -74,7 +66,7 @@ const Navbar = () => {
                 <a
                   href={l.href}
                   onClick={() => setIsOpen(false)}
-                  className="border-2 border-black font-bold px-4 py-2 rounded-none bg-primary text-typo shadow-[4px_4px_0_rgba(0,0,0,1)] inline-block w-full text-center hover:text-secondary"
+                  className="nav-clay-link nav-clay-link--mobile"
                 >
                   {l.label}
                 </a>

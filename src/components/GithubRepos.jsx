@@ -16,7 +16,7 @@ const GithubRepos = () => {
   return (
     <section
       id="github-repos"
-      className="w-full mx-auto px-4 sm:px-8 md:px-10 py-12 bg-primary text-typo border-4 border-black shadow-[8px_8px_0_rgba(0,0,0,1)] mt-4"
+      className="gh-repos-clay w-full mx-auto px-4 sm:px-8 md:px-10 py-12 text-typo mt-4"
     >
       <motion.h2
         initial={{y: -20, opacity: 0}}
@@ -25,9 +25,7 @@ const GithubRepos = () => {
         viewport={{once: true}}
         className="text-3xl sm:text-4xl font-extrabold mb-8 tracking-tight"
       >
-        <span className="inline-block bg-accent px-4 py-2 border-4 border-black shadow-[4px_4px_0_rgba(0,0,0,1)] rounded-none">
-          Featured Repositories
-        </span>
+        <span className="gh-repos-clay-pill">Featured Repositories</span>
       </motion.h2>
 
       {curated.length === 0 && (
@@ -44,14 +42,11 @@ const GithubRepos = () => {
             whileInView={{opacity: 1, y: 0}}
             transition={{delay: index * 0.05, type: "spring", stiffness: 200}}
             viewport={{once: true}}
-            className="border-4 border-black bg-secondary rounded-none p-0 shadow-[6px_6px_0_rgba(0,0,0,1)] overflow-hidden"
+            className="gh-repo-card"
           >
-            {/* Top accent bar */}
-            <div className="h-3 w-full bg-edge" />
+            <div className="gh-repo-accent-bar" />
 
-            {/* Inner content */}
             <div className="p-6 flex flex-col h-full justify-between">
-              {/* Repo header */}
               <div>
                 <h3 className="text-xl font-extrabold mb-1 roboto-slab-hero">
                   <a
@@ -72,23 +67,16 @@ const GithubRepos = () => {
                 )}
               </div>
 
-              {/* Footer chips */}
-              <ul className="flex flex-wrap gap-3 text-xs sm:text-sm font-medium mt-auto pt-4 border-t-4 border-black">
+              <ul className="flex flex-wrap gap-3 text-xs sm:text-sm font-medium mt-auto pt-4 gh-repo-footer">
                 {repo.language && (
-                  <li className="px-3 py-1 bg-primary border-2 border-black shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none uppercase">
-                    {repo.language}
-                  </li>
+                  <li className="gh-repo-chip uppercase">{repo.language}</li>
                 )}
                 {typeof repo.stargazers_count === "number" && (
-                  <li className="px-3 py-1 bg-primary text-black border-2 border-black shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none">
-                    ★ {repo.stargazers_count}
-                  </li>
+                  <li className="gh-repo-chip">★ {repo.stargazers_count}</li>
                 )}
                 {Date.now() - new Date(repo.pushed_at).getTime() <
                   TWELVE_MONTHS_MS && (
-                  <li className="px-3 py-1 bg-lime-300 border-2 border-black shadow-[2px_2px_0_rgba(0,0,0,1)] rounded-none">
-                    New
-                  </li>
+                  <li className="gh-repo-chip gh-repo-chip--new">New</li>
                 )}
               </ul>
             </div>
