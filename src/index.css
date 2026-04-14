@@ -1,10 +1,15 @@
 @import "./styles/hero.css";
+@import "./styles/about.css";
 @import "./styles/skills.css";
 @import "./styles/experience.css";
-/* @import "./styles/education.css"; */
+@import "./styles/education.css";
 @import "./styles/projects.css";
+@import "./styles/github-repos.css";
+@import "./styles/github-stats.css";
+@import "./styles/github-profile.css";
+@import "./styles/footer.css";
 @import "./styles/fonts.css";
-/* @import "./styles/navbar.css"; */
+@import "./styles/navbar.css";
 
 @tailwind base;
 @tailwind components;
@@ -27,8 +32,8 @@
 
 /* globals.css (or wherever you include base layers) */
 :root {
-  --color-primary: #f0f0f0; /* light grey */
-  --color-secondary: #50c878; /* emerald green */
-  --color-accent: #ffffff; /* pure white */
-  --color-typo: #141414;
+  --color-primary: #f0ebe5; /* warm clay beige */
+  --color-secondary: #a694c8; /* muted lavender */
+  --color-accent: #faf5ef; /* soft cream */
+  --color-typo: #2b2623; /* warm charcoal */
 }

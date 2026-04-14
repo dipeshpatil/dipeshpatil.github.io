@@ -1,0 +1,54 @@
+/* ── Claymorphism: Footer ── */
+.footer-clay {
+  background: linear-gradient(145deg, #b8a9d4, #9684b8);
+  border: none;
+  box-shadow:
+    inset 3px 3px 8px rgba(255, 255, 255, 0.3),
+    inset -3px -3px 8px rgba(0, 0, 0, 0.1),
+    0 -4px 16px rgba(0, 0, 0, 0.08);
+}
+
+/* ── Decorative blobs ── */
+.footer-clay-blob {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.5;
+}
+
+.footer-clay-blob--lg {
+  left: 1rem;
+  bottom: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  background: linear-gradient(145deg, #f5f0ea, #e2dad0);
+  box-shadow:
+    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.6),
+    inset -1.5px -1.5px 3px rgba(0, 0, 0, 0.08),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.footer-clay-blob--sm {
+  right: 1rem;
+  top: 1rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 30%;
+  background: linear-gradient(145deg, #f0d999, #e5b04a);
+  box-shadow:
+    inset 1px 1px 2px rgba(255, 255, 255, 0.5),
+    inset -1px -1px 2px rgba(0, 0, 0, 0.08),
+    2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* ── Brand badge ── */
+.footer-clay-brand {
+  display: inline-block;
+  padding: 0.1rem 0.5rem;
+  border-radius: 0.375rem;
+  color: #faf0ef;
+  background: linear-gradient(145deg, #e8887d, #c44a3c);
+  box-shadow:
+    inset 1.5px 1.5px 3px rgba(255, 255, 255, 0.25),
+    inset -1.5px -1.5px 3px rgba(0, 0, 0, 0.12),
+    2px 2px 6px rgba(0, 0, 0, 0.1);
+}
